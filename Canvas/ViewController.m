@@ -19,8 +19,7 @@
     [super viewDidLoad];
 	[self setNeedsStatusBarAppearanceUpdate];
     
-    self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-canvas-active"];
-    self.tabBarItem.image = [UIImage imageNamed:@"icon-canvas"];
+    self.scrollView.contentSize = CGSizeMake(320, 640);
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
