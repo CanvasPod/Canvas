@@ -18,7 +18,7 @@
 + (void)setDuration:(NSTimeInterval)duration setDelay:(NSTimeInterval)delay view:(UIView *)view {
     // Start
     view.alpha = 0;
-    view.transform = CGAffineTransformMakeTranslation(40, 0);
+    view.transform = CGAffineTransformMakeTranslation(300, 0);
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 1;

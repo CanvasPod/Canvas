@@ -18,16 +18,13 @@
 {
     [super viewDidLoad];
 	[self setNeedsStatusBarAppearanceUpdate];
+    
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-canvas-active"];
+    self.tabBarItem.image = [UIImage imageNamed:@"icon-canvas"];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

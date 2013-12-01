@@ -23,6 +23,9 @@
     
     UINib *sectionHeaderNib = [UINib nibWithNibName:@"CSSectionHeaderCell" bundle:nil];
     [self.tableView registerNib:sectionHeaderNib forCellReuseIdentifier:self.sectionHeaderCellIdentifier];
+    
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-animations-active"];
+    self.tabBarItem.image = [UIImage imageNamed:@"icon-animations"];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
