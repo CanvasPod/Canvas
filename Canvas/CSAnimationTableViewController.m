@@ -19,7 +19,17 @@
 {
     [super viewDidLoad];
     self.tableView.contentInset = UIEdgeInsetsMake(22, 0, 0, 0);
+    [self setNeedsStatusBarAppearanceUpdate];
+    
+    UINib *sectionHeaderNib = [UINib nibWithNibName:@"CSSectionHeaderCell" bundle:nil];
+    [self.tableView registerNib:sectionHeaderNib forCellReuseIdentifier:self.sectionHeaderCellIdentifier];
 }
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+#pragma mark UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
@@ -28,6 +38,13 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     [cell startCanvasAnimation];
+    cell.backgroundColor = [UIColor clearColor];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.sectionHeaderCellIdentifier];
+    cell.textLabel.text = [self tableView:tableView titleForHeaderInSection:section];
+    return cell;
 }
 
 @end

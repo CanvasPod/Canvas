@@ -11,6 +11,9 @@
 #import "CSBounceDown.h"
 #import "CSBounceLeft.h"
 #import "CSFadeIn.h"
+#import "CSFadeInLeft.h"
+#import "CSFlash.h"
+#import "CSSlideLeft.h"
 
 @implementation CSAnimationView
 
@@ -32,6 +35,18 @@
                              view:self];
     } else if ([self.animationType isEqualToString:CSAnimationsFadeIn]) {
         [CSFadeIn setDuration:self.duration
+                     setDelay:self.delay
+                         view:self];
+    } else if ([self.animationType isEqualToString:CSAnimationsFadeInLeft]) {
+        [CSFadeInLeft setDuration:self.duration
+                     setDelay:self.delay
+                         view:self];
+    } else if ([self.animationType isEqualToString:CSAnimationsSlideLeft]) {
+        [CSSlideLeft setDuration:self.duration
+                     setDelay:self.delay
+                         view:self];
+    } else if ([self.animationType isEqualToString:CSAnimationsFlash]) {
+        [CSFlash setDuration:self.duration
                      setDelay:self.delay
                          view:self];
     } else {

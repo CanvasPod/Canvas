@@ -13,6 +13,9 @@ typedef NSString *CSAnimation;
 static CSAnimation CSAnimationsBounceLeft   = @"bounceLeft";
 static CSAnimation CSAnimationsBounceDown   = @"bounceDown";
 static CSAnimation CSAnimationsFadeIn       = @"fadeIn";
+static CSAnimation CSAnimationsFadeInLeft   = @"fadeInLeft";
+static CSAnimation CSAnimationsSlideLeft    = @"slideLeft";
+static CSAnimation CSAnimationsFlash        = @"flash";
 
 
 @interface CSAnimationView : UIView

@@ -23,6 +23,7 @@
 		96CC1C1E184AFC8D00506C40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BFD184AFC8D00506C40 /* UIKit.framework */; };
 		96CC1C26184AFC8D00506C40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96CC1C24184AFC8D00506C40 /* InfoPlist.strings */; };
 		96CC1C28184AFC8D00506C40 /* CanvasTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CC1C27184AFC8D00506C40 /* CanvasTests.m */; };
+		96D778B0184B341D006E8951 /* CSSectionHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D778AF184B341C006E8951 /* CSSectionHeaderCell.xib */; };
 		A787D0F7917445C4BAFF8C7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A78DC2869B4F67B79E82F0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		96CC1C23184AFC8D00506C40 /* CanvasTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CanvasTests-Info.plist"; sourceTree = "<group>"; };
 		96CC1C25184AFC8D00506C40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96CC1C27184AFC8D00506C40 /* CanvasTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasTests.m; sourceTree = "<group>"; };
+		96D778AF184B341C006E8951 /* CSSectionHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSSectionHeaderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				96CC1C12184AFC8D00506C40 /* ViewController.m */,
 				1A363420184B101600969751 /* CSAnimationTableViewController.h */,
 				1A363421184B101600969751 /* CSAnimationTableViewController.m */,
+				96D778AF184B341C006E8951 /* CSSectionHeaderCell.xib */,
 				96CC1C14184AFC8D00506C40 /* Images.xcassets */,
 				96CC1C00184AFC8D00506C40 /* Supporting Files */,
 			);
@@ -248,6 +251,7 @@
 				96CC1C15184AFC8D00506C40 /* Images.xcassets in Resources */,
 				96CC1C0D184AFC8D00506C40 /* Main_iPhone.storyboard in Resources */,
 				96CC1C04184AFC8D00506C40 /* InfoPlist.strings in Resources */,
+				96D778B0184B341D006E8951 /* CSSectionHeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

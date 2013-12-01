@@ -10,4 +10,6 @@
 
 @interface CSAnimationTableViewController : UITableViewController
 
+@property (nonatomic, copy) NSString *sectionHeaderCellIdentifier;
+
 @end
