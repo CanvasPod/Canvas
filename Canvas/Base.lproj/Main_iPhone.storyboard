@@ -413,6 +413,106 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="701" y="162"/>
         </scene>
+        <!--Components View Controller - Components-->
+        <scene sceneID="FVA-6W-drT">
+            <objects>
+                <viewController id="XhU-jP-5vl" customClass="CSComponentsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s3F-SG-iXy"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZOw-yK-nxR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VSf-MM-qXX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1b-kk-E6z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vas-zW-A2g">
+                                        <rect key="frame" x="0.0" y="10" width="340" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Custom Font" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-cU-IFb">
+                                                <rect key="frame" x="20" y="20" width="130" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="0i3-sg-Xdn">
+                                                <rect key="frame" x="20" y="44" width="300" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img-font" translatesAutoresizingMaskIntoConstraints="NO" id="9ab-PW-BKG">
+                                                <rect key="frame" x="30" y="104" width="208" height="54"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In info.plist, set your font filenames that you imported." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="q3a-iC-j8A">
+                                                <rect key="frame" x="30" y="53" width="275" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="0.270588249" green="0.32941177490000001" blue="0.4156863093" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jV-3r-Wif">
+                                        <rect key="frame" x="0.0" y="199" width="320" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="rq1-ck-8KI">
+                                                <rect key="frame" x="30" y="0.0" width="290" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img-postscript" translatesAutoresizingMaskIntoConstraints="NO" id="iMx-VF-pxl">
+                                                <rect key="frame" x="30" y="60" width="219" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The PostScript name can be found in Font Book." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="275" translatesAutoresizingMaskIntoConstraints="NO" id="2o1-ig-ntq">
+                                                <rect key="frame" x="30" y="9" width="275" height="41"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="0.270588249" green="0.32941177490000001" blue="0.4156863093" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfa-Ts-Vyb">
+                                        <rect key="frame" x="0.0" y="338" width="320" height="170"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="gA1-U6-pOi">
+                                                <rect key="frame" x="30" y="0.0" width="290" height="1"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="img-fontname" translatesAutoresizingMaskIntoConstraints="NO" id="Q0g-WU-uhe">
+                                                <rect key="frame" x="180" y="9" width="130" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In Runtime, set fontName and value to its PostScript name. " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="140" translatesAutoresizingMaskIntoConstraints="NO" id="oug-po-jMn">
+                                                <rect key="frame" x="30" y="9" width="140" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="0.270588249" green="0.32941177490000001" blue="0.4156863093" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Components" image="icon-components" id="6og-VX-eci"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hL5-4a-eVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="827"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dec-5W-5Zw">
             <objects>
@@ -427,6 +527,7 @@ That's it!</string>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="1sn-HX-lzO"/>
                         <segue destination="xVM-i8-9WH" kind="relationship" relationship="viewControllers" id="bUl-Ia-X8e"/>
+                        <segue destination="XhU-jP-5vl" kind="relationship" relationship="viewControllers" id="ojF-yS-I0U"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2y-6S-Sza" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -439,9 +540,13 @@ That's it!</string>
         <image name="button-line-white" width="30" height="30"/>
         <image name="icon-animations" width="32" height="32"/>
         <image name="icon-canvas" width="32" height="32"/>
+        <image name="icon-components" width="32" height="32"/>
         <image name="icon-github" width="20" height="20"/>
         <image name="icon-twitter" width="20" height="20"/>
         <image name="img-animation" width="148" height="121"/>
+        <image name="img-font" width="208" height="54"/>
+        <image name="img-fontname" width="130" height="120"/>
+        <image name="img-postscript" width="219" height="59"/>
         <image name="line-black-1px" width="2" height="1"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
