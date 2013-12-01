@@ -7,18 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96C1D15C184AFE8B0070F6FA /* CSBounceLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D151184AFE8B0070F6FA /* CSBounceLeft.m */; };
-		96C1D15D184AFE8B0070F6FA /* CSBounceDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D153184AFE8B0070F6FA /* CSBounceDown.m */; };
-		96C1D15E184AFE8B0070F6FA /* CSFadeIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D155184AFE8B0070F6FA /* CSFadeIn.m */; };
-		96C1D15F184AFE8B0070F6FA /* CSSlideLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D157184AFE8B0070F6FA /* CSSlideLeft.m */; };
-		96C1D160184AFE8B0070F6FA /* CSFadeInLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D159184AFE8B0070F6FA /* CSFadeInLeft.m */; };
-		96C1D161184AFE8B0070F6FA /* CSFlash.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D15B184AFE8B0070F6FA /* CSFlash.m */; };
-		96C1D165184AFEFF0070F6FA /* CSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D164184AFEFF0070F6FA /* CSBlurView.m */; };
-		96C1D172184AFF400070F6FA /* UIButton+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D169184AFF400070F6FA /* UIButton+TCCustomFont.m */; };
-		96C1D173184AFF400070F6FA /* UILabel+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D16B184AFF400070F6FA /* UILabel+TCCustomFont.m */; };
-		96C1D174184AFF400070F6FA /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D16D184AFF400070F6FA /* UITextField+PlaceholderColor.m */; };
-		96C1D175184AFF400070F6FA /* UITextField+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D16F184AFF400070F6FA /* UITextField+TCCustomFont.m */; };
-		96C1D176184AFF400070F6FA /* UITextView+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1D171184AFF400070F6FA /* UITextView+TCCustomFont.m */; };
 		96CC1BFA184AFC8D00506C40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BF9184AFC8D00506C40 /* Foundation.framework */; };
 		96CC1BFC184AFC8D00506C40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BFB184AFC8D00506C40 /* CoreGraphics.framework */; };
 		96CC1BFE184AFC8D00506C40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BFD184AFC8D00506C40 /* UIKit.framework */; };
@@ -50,30 +38,6 @@
 /* Begin PBXFileReference section */
 		22A78DC2869B4F67B79E82F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8051EC820940BF8C955A95 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		96C1D150184AFE8B0070F6FA /* CSBounceLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBounceLeft.h; sourceTree = "<group>"; };
-		96C1D151184AFE8B0070F6FA /* CSBounceLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBounceLeft.m; sourceTree = "<group>"; };
-		96C1D152184AFE8B0070F6FA /* CSBounceDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBounceDown.h; sourceTree = "<group>"; };
-		96C1D153184AFE8B0070F6FA /* CSBounceDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBounceDown.m; sourceTree = "<group>"; };
-		96C1D154184AFE8B0070F6FA /* CSFadeIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFadeIn.h; sourceTree = "<group>"; };
-		96C1D155184AFE8B0070F6FA /* CSFadeIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFadeIn.m; sourceTree = "<group>"; };
-		96C1D156184AFE8B0070F6FA /* CSSlideLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSlideLeft.h; sourceTree = "<group>"; };
-		96C1D157184AFE8B0070F6FA /* CSSlideLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSlideLeft.m; sourceTree = "<group>"; };
-		96C1D158184AFE8B0070F6FA /* CSFadeInLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFadeInLeft.h; sourceTree = "<group>"; };
-		96C1D159184AFE8B0070F6FA /* CSFadeInLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFadeInLeft.m; sourceTree = "<group>"; };
-		96C1D15A184AFE8B0070F6FA /* CSFlash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSFlash.h; sourceTree = "<group>"; };
-		96C1D15B184AFE8B0070F6FA /* CSFlash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSFlash.m; sourceTree = "<group>"; };
-		96C1D163184AFEFF0070F6FA /* CSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSBlurView.h; sourceTree = "<group>"; };
-		96C1D164184AFEFF0070F6FA /* CSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSBlurView.m; sourceTree = "<group>"; };
-		96C1D168184AFF400070F6FA /* UIButton+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TCCustomFont.h"; sourceTree = "<group>"; };
-		96C1D169184AFF400070F6FA /* UIButton+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TCCustomFont.m"; sourceTree = "<group>"; };
-		96C1D16A184AFF400070F6FA /* UILabel+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TCCustomFont.h"; sourceTree = "<group>"; };
-		96C1D16B184AFF400070F6FA /* UILabel+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TCCustomFont.m"; sourceTree = "<group>"; };
-		96C1D16C184AFF400070F6FA /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
-		96C1D16D184AFF400070F6FA /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
-		96C1D16E184AFF400070F6FA /* UITextField+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TCCustomFont.h"; sourceTree = "<group>"; };
-		96C1D16F184AFF400070F6FA /* UITextField+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TCCustomFont.m"; sourceTree = "<group>"; };
-		96C1D170184AFF400070F6FA /* UITextView+TCCustomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+TCCustomFont.h"; sourceTree = "<group>"; };
-		96C1D171184AFF400070F6FA /* UITextView+TCCustomFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+TCCustomFont.m"; sourceTree = "<group>"; };
 		96CC1BF6184AFC8D00506C40 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CC1BF9184AFC8D00506C40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96CC1BFB184AFC8D00506C40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,60 +85,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		96C1D162184AFE910070F6FA /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				96C1D150184AFE8B0070F6FA /* CSBounceLeft.h */,
-				96C1D151184AFE8B0070F6FA /* CSBounceLeft.m */,
-				96C1D152184AFE8B0070F6FA /* CSBounceDown.h */,
-				96C1D153184AFE8B0070F6FA /* CSBounceDown.m */,
-				96C1D154184AFE8B0070F6FA /* CSFadeIn.h */,
-				96C1D155184AFE8B0070F6FA /* CSFadeIn.m */,
-				96C1D156184AFE8B0070F6FA /* CSSlideLeft.h */,
-				96C1D157184AFE8B0070F6FA /* CSSlideLeft.m */,
-				96C1D158184AFE8B0070F6FA /* CSFadeInLeft.h */,
-				96C1D159184AFE8B0070F6FA /* CSFadeInLeft.m */,
-				96C1D15A184AFE8B0070F6FA /* CSFlash.h */,
-				96C1D15B184AFE8B0070F6FA /* CSFlash.m */,
-			);
-			name = Animations;
-			sourceTree = "<group>";
-		};
-		96C1D166184AFF040070F6FA /* Blur */ = {
-			isa = PBXGroup;
-			children = (
-				96C1D163184AFEFF0070F6FA /* CSBlurView.h */,
-				96C1D164184AFEFF0070F6FA /* CSBlurView.m */,
-			);
-			name = Blur;
-			sourceTree = "<group>";
-		};
-		96C1D167184AFF0C0070F6FA /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				96C1D177184AFF470070F6FA /* Custom Font */,
-				96C1D166184AFF040070F6FA /* Blur */,
-			);
-			name = Components;
-			sourceTree = "<group>";
-		};
-		96C1D177184AFF470070F6FA /* Custom Font */ = {
-			isa = PBXGroup;
-			children = (
-				96C1D168184AFF400070F6FA /* UIButton+TCCustomFont.h */,
-				96C1D169184AFF400070F6FA /* UIButton+TCCustomFont.m */,
-				96C1D16A184AFF400070F6FA /* UILabel+TCCustomFont.h */,
-				96C1D16B184AFF400070F6FA /* UILabel+TCCustomFont.m */,
-				96C1D16C184AFF400070F6FA /* UITextField+PlaceholderColor.h */,
-				96C1D16D184AFF400070F6FA /* UITextField+PlaceholderColor.m */,
-				96C1D16E184AFF400070F6FA /* UITextField+TCCustomFont.h */,
-				96C1D16F184AFF400070F6FA /* UITextField+TCCustomFont.m */,
-				96C1D170184AFF400070F6FA /* UITextView+TCCustomFont.h */,
-				96C1D171184AFF400070F6FA /* UITextView+TCCustomFont.m */,
-			);
-			name = "Custom Font";
-			sourceTree = "<group>";
-		};
 		96CC1BED184AFC8D00506C40 = {
 			isa = PBXGroup;
 			children = (
@@ -217,8 +127,6 @@
 				96CC1C11184AFC8D00506C40 /* ViewController.h */,
 				96CC1C12184AFC8D00506C40 /* ViewController.m */,
 				96CC1C14184AFC8D00506C40 /* Images.xcassets */,
-				96C1D167184AFF0C0070F6FA /* Components */,
-				96C1D162184AFE910070F6FA /* Animations */,
 				96CC1C00184AFC8D00506C40 /* Supporting Files */,
 			);
 			path = Canvas;
@@ -386,21 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96C1D15E184AFE8B0070F6FA /* CSFadeIn.m in Sources */,
-				96C1D160184AFE8B0070F6FA /* CSFadeInLeft.m in Sources */,
 				96CC1C13184AFC8D00506C40 /* ViewController.m in Sources */,
-				96C1D173184AFF400070F6FA /* UILabel+TCCustomFont.m in Sources */,
-				96C1D175184AFF400070F6FA /* UITextField+TCCustomFont.m in Sources */,
 				96CC1C0A184AFC8D00506C40 /* AppDelegate.m in Sources */,
-				96C1D15C184AFE8B0070F6FA /* CSBounceLeft.m in Sources */,
-				96C1D176184AFF400070F6FA /* UITextView+TCCustomFont.m in Sources */,
-				96C1D161184AFE8B0070F6FA /* CSFlash.m in Sources */,
 				96CC1C06184AFC8D00506C40 /* main.m in Sources */,
-				96C1D174184AFF400070F6FA /* UITextField+PlaceholderColor.m in Sources */,
-				96C1D15F184AFE8B0070F6FA /* CSSlideLeft.m in Sources */,
-				96C1D15D184AFE8B0070F6FA /* CSBounceDown.m in Sources */,
-				96C1D165184AFEFF0070F6FA /* CSBlurView.m in Sources */,
-				96C1D172184AFF400070F6FA /* UIButton+TCCustomFont.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
