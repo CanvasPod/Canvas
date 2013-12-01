@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F226BCBD-BA2C-403E-B75D-FD1782F88615</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Canvas</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3ECEE01E-6B90-437D-B16C-9130BB904A72</key>
+		<string>https://github.com/MengTo/Canvas.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Canvas.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3ECEE01E-6B90-437D-B16C-9130BB904A72</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/MengTo/Canvas.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3ECEE01E-6B90-437D-B16C-9130BB904A72</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3ECEE01E-6B90-437D-B16C-9130BB904A72</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Canvas</string>
+		</dict>
+	</array>
+</dict>
+</plist>
