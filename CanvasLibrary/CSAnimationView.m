@@ -7,13 +7,6 @@
 //
 
 #import "CSAnimationView.h"
-#import <objc/runtime.h>
-#import "CSBounceDown.h"
-#import "CSBounceLeft.h"
-#import "CSFadeIn.h"
-#import "CSFadeInLeft.h"
-#import "CSFlash.h"
-#import "CSSlideLeft.h"
 
 @implementation CSAnimationView
 
@@ -24,35 +17,10 @@
 }
 
 - (void)startCanvasAnimation {
-
-    if ([self.animationType isEqualToString:CSAnimationsBounceLeft]) {
-        [CSBounceLeft setDuration:self.duration
-                         setDelay:self.delay
-                             view:self];
-    } else if ([self.animationType isEqualToString:CSAnimationsBounceDown]) {
-        [CSBounceDown setDuration:self.duration
-                         setDelay:self.delay
-                             view:self];
-    } else if ([self.animationType isEqualToString:CSAnimationsFadeIn]) {
-        [CSFadeIn setDuration:self.duration
-                     setDelay:self.delay
-                         view:self];
-    } else if ([self.animationType isEqualToString:CSAnimationsFadeInLeft]) {
-        [CSFadeInLeft setDuration:self.duration
-                     setDelay:self.delay
-                         view:self];
-    } else if ([self.animationType isEqualToString:CSAnimationsSlideLeft]) {
-        [CSSlideLeft setDuration:self.duration
-                     setDelay:self.delay
-                         view:self];
-    } else if ([self.animationType isEqualToString:CSAnimationsFlash]) {
-        [CSFlash setDuration:self.duration
-                     setDelay:self.delay
-                         view:self];
-    } else {
-        // Or you can do custom animations inline here, so
-        // you won't need to create separate files
-    }
+    
+    Class <CSAnimation> class = [CSAnimation classForAnimationType:self.animationType];
+    
+    [class performAnimationOnView:self duration:self.duration delay:self.delay];
 
     [super startCanvasAnimation];
 }

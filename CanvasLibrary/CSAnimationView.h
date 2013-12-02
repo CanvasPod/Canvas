@@ -7,22 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef NSString *CSAnimation;
-
-static CSAnimation CSAnimationsBounceLeft   = @"bounceLeft";
-static CSAnimation CSAnimationsBounceDown   = @"bounceDown";
-static CSAnimation CSAnimationsFadeIn       = @"fadeIn";
-static CSAnimation CSAnimationsFadeInLeft   = @"fadeInLeft";
-static CSAnimation CSAnimationsSlideLeft    = @"slideLeft";
-static CSAnimation CSAnimationsFlash        = @"flash";
-
+#import "CSAnimation.h"
 
 @interface CSAnimationView : UIView
 
 @property (nonatomic) NSTimeInterval delay;
 @property (nonatomic) NSTimeInterval duration;
-@property (nonatomic, copy) CSAnimation animationType;
+@property (nonatomic, copy) CSAnimationType animationType;
 @property (nonatomic) BOOL pauseAnimationOnAwake;  // If set, animation wont starts on awakeFromNib
 
 @end
