@@ -23,6 +23,11 @@
     [self.tableView registerNib:sectionHeaderNib forCellReuseIdentifier:self.sectionHeaderCellIdentifier];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.view startCanvasAnimation];
+}
+
 #pragma mark UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

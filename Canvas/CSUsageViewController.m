@@ -6,13 +6,14 @@
 //  Copyright (c) 2013 Canvas. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CSUsageViewController.h"
+#import "CSAnimationView.h"
 
-@interface ViewController ()
+@interface CSUsageViewController ()
 
 @end
 
-@implementation ViewController
+@implementation CSUsageViewController
 
 - (void)viewDidLoad
 {
@@ -28,5 +29,11 @@
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.view startCanvasAnimation];
+}
+
 
 @end

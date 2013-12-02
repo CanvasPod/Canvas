@@ -7,6 +7,7 @@
 //
 
 #import "CSComponentsViewController.h"
+#import "CSAnimationView.h"
 
 @interface CSComponentsViewController ()
 
@@ -25,6 +26,11 @@
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
     return UIStatusBarStyleLightContent;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.view startCanvasAnimation];
 }
 
 @end
