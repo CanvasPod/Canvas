@@ -18,18 +18,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tableView.contentInset = UIEdgeInsetsMake(22, 0, 0, 0);
-    [self setNeedsStatusBarAppearanceUpdate];
     
     UINib *sectionHeaderNib = [UINib nibWithNibName:@"CSSectionHeaderCell" bundle:nil];
     [self.tableView registerNib:sectionHeaderNib forCellReuseIdentifier:self.sectionHeaderCellIdentifier];
-    
-    self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-animations-active"];
-    self.tabBarItem.image = [UIImage imageNamed:@"icon-animations"];
-}
-
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
 }
 
 #pragma mark UITableViewDelegate
@@ -48,6 +39,27 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.sectionHeaderCellIdentifier];
     cell.textLabel.text = [self tableView:tableView titleForHeaderInSection:section];
     return cell;
+}
+
+@end
+
+
+
+#pragma mark - 
+
+@implementation CSAnimationContainerViewController
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self setNeedsStatusBarAppearanceUpdate];
+    
+    self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-animations-active"];
+    self.tabBarItem.image = [UIImage imageNamed:@"icon-animations"];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

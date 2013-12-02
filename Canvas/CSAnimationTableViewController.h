@@ -13,3 +13,8 @@
 @property (nonatomic, copy) NSString *sectionHeaderCellIdentifier;
 
 @end
+
+
+@interface CSAnimationContainerViewController : UIViewController
+
+@end

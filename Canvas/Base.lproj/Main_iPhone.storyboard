@@ -189,7 +189,7 @@ That's it!</string>
             <objects>
                 <tableViewController id="xVM-i8-9WH" customClass="CSAnimationTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cWE-iV-4Qp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.30196079611778259" green="0.7450980544090271" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
@@ -439,7 +439,7 @@ That's it!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNx-cp-qMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="162"/>
+            <point key="canvasLocation" x="1061" y="182"/>
         </scene>
         <!--Components View Controller - Components-->
         <scene sceneID="FVA-6W-drT">
@@ -577,13 +577,43 @@ That's it!</string>
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="1sn-HX-lzO"/>
-                        <segue destination="xVM-i8-9WH" kind="relationship" relationship="viewControllers" id="bUl-Ia-X8e"/>
+                        <segue destination="A4v-1v-laK" kind="relationship" relationship="viewControllers" id="9eY-Ow-Fpt"/>
                         <segue destination="XhU-jP-5vl" kind="relationship" relationship="viewControllers" id="ojF-yS-I0U"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2y-6S-Sza" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="333" y="162"/>
+        </scene>
+        <!--Animation Container View Controller - Animations-->
+        <scene sceneID="NYv-Lf-T6A">
+            <objects>
+                <viewController id="A4v-1v-laK" customClass="CSAnimationContainerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Svc-fF-PjB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Gbg-ta-CFN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <containerView contentMode="scaleToFill" id="sHE-Uy-YJt">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="xVM-i8-9WH" kind="embed" id="lZp-RB-ZQ9"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25490197539999998" green="0.69411766529999996" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Animations" image="icon-animations" id="VRc-DH-PXv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="naf-zo-S2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="162"/>
         </scene>
     </scenes>
     <resources>
