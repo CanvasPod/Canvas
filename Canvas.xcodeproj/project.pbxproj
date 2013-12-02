@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A363422184B101600969751 /* CSAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A363421184B101600969751 /* CSAnimationTableViewController.m */; };
+		1A977804184CAB4A009577DA /* CSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A977803184CAB4A009577DA /* CSTabBarViewController.m */; };
 		960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960E1D66184C9E7E00F297E9 /* CSSectionHeaderCell.m */; };
 		96CC1BFA184AFC8D00506C40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BF9184AFC8D00506C40 /* Foundation.framework */; };
 		96CC1BFC184AFC8D00506C40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BFB184AFC8D00506C40 /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		1A363420184B101600969751 /* CSAnimationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAnimationTableViewController.h; sourceTree = "<group>"; };
 		1A363421184B101600969751 /* CSAnimationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAnimationTableViewController.m; sourceTree = "<group>"; };
+		1A977802184CAB4A009577DA /* CSTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabBarViewController.h; sourceTree = "<group>"; };
+		1A977803184CAB4A009577DA /* CSTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTabBarViewController.m; sourceTree = "<group>"; };
 		22A78DC2869B4F67B79E82F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8051EC820940BF8C955A95 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		960E1D65184C9E7E00F297E9 /* CSSectionHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSectionHeaderCell.h; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 		96D778B4184B3B64006E8951 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A977802184CAB4A009577DA /* CSTabBarViewController.h */,
+				1A977803184CAB4A009577DA /* CSTabBarViewController.m */,
 				96CC1C11184AFC8D00506C40 /* CSUsageViewController.h */,
 				96CC1C12184AFC8D00506C40 /* CSUsageViewController.m */,
 				96D778B1184B3B54006E8951 /* CSComponentsViewController.h */,
@@ -335,6 +340,7 @@
 				96CC1C06184AFC8D00506C40 /* main.m in Sources */,
 				960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */,
 				96D778B3184B3B54006E8951 /* CSComponentsViewController.m in Sources */,
+				1A977804184CAB4A009577DA /* CSTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

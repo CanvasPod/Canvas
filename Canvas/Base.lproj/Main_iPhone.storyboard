@@ -145,7 +145,7 @@
                                                 <rect key="frame" x="20" y="220" width="300" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-animation" id="9bC-BF-1dx">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-animation" id="9bC-BF-1dx">
                                                 <rect key="frame" x="162" y="229" width="148" height="121"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -474,7 +474,7 @@ That's it!</string>
                                                 <rect key="frame" x="20" y="44" width="300" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-font" id="9ab-PW-BKG">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-font" id="9ab-PW-BKG">
                                                 <rect key="frame" x="30" y="104" width="208" height="54"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -505,7 +505,7 @@ That's it!</string>
                                                 <rect key="frame" x="30" y="0.0" width="290" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-postscript" id="iMx-VF-pxl">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-postscript" id="iMx-VF-pxl">
                                                 <rect key="frame" x="30" y="60" width="219" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -536,7 +536,7 @@ That's it!</string>
                                                 <rect key="frame" x="30" y="0.0" width="290" height="1"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-fontname" id="Q0g-WU-uhe">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-fontname" id="Q0g-WU-uhe">
                                                 <rect key="frame" x="180" y="9" width="130" height="120"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -570,10 +570,10 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="701" y="827"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="Dec-5W-5Zw">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AlK-fb-AVj" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="AlK-fb-AVj" customClass="CSTabBarViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Gq4-Dg-mqJ">
@@ -582,11 +582,18 @@ That's it!</string>
                         <color key="tintColor" red="0.25490197539999998" green="0.69411766529999996" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
+                        <outlet property="tapGestureRecognizer" destination="4fd-Eb-OdB" id="lU9-4b-mDe"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="1sn-HX-lzO"/>
                         <segue destination="A4v-1v-laK" kind="relationship" relationship="viewControllers" id="9eY-Ow-Fpt"/>
                         <segue destination="XhU-jP-5vl" kind="relationship" relationship="viewControllers" id="ojF-yS-I0U"/>
                     </connections>
                 </tabBarController>
+                <tapGestureRecognizer id="4fd-Eb-OdB">
+                    <connections>
+                        <action selector="handleTapGestureRecognizer:" destination="AlK-fb-AVj" id="aAi-Do-KH7"/>
+                        <outlet property="delegate" destination="AlK-fb-AVj" id="wRq-8p-3Ie"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2y-6S-Sza" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="333" y="162"/>
