@@ -189,9 +189,9 @@ That's it!</string>
             <objects>
                 <tableViewController id="xVM-i8-9WH" customClass="CSAnimationTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cWE-iV-4Qp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.30196079611778259" green="0.7450980544090271" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Bounce" id="iXB-iy-Pur">
@@ -439,7 +439,7 @@ That's it!</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNx-cp-qMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="182"/>
+            <point key="canvasLocation" x="1051" y="231"/>
         </scene>
         <!--Components View Controller - Components-->
         <scene sceneID="FVA-6W-drT">
@@ -599,8 +599,8 @@ That's it!</string>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <containerView contentMode="scaleToFill" id="sHE-Uy-YJt">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="xVM-i8-9WH" kind="embed" id="lZp-RB-ZQ9"/>

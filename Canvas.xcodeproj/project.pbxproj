@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A363422184B101600969751 /* CSAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A363421184B101600969751 /* CSAnimationTableViewController.m */; };
+		960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960E1D66184C9E7E00F297E9 /* CSSectionHeaderCell.m */; };
 		96CC1BFA184AFC8D00506C40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BF9184AFC8D00506C40 /* Foundation.framework */; };
 		96CC1BFC184AFC8D00506C40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BFB184AFC8D00506C40 /* CoreGraphics.framework */; };
 		96CC1BFE184AFC8D00506C40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BFD184AFC8D00506C40 /* UIKit.framework */; };
@@ -43,6 +44,8 @@
 		1A363421184B101600969751 /* CSAnimationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAnimationTableViewController.m; sourceTree = "<group>"; };
 		22A78DC2869B4F67B79E82F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F8051EC820940BF8C955A95 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		960E1D65184C9E7E00F297E9 /* CSSectionHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSectionHeaderCell.h; sourceTree = "<group>"; };
+		960E1D66184C9E7E00F297E9 /* CSSectionHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSectionHeaderCell.m; sourceTree = "<group>"; };
 		96CC1BF6184AFC8D00506C40 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96CC1BF9184AFC8D00506C40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96CC1BFB184AFC8D00506C40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -93,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		960E1D68184C9E8700F297E9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				960E1D65184C9E7E00F297E9 /* CSSectionHeaderCell.h */,
+				960E1D66184C9E7E00F297E9 /* CSSectionHeaderCell.m */,
+				96D778AF184B341C006E8951 /* CSSectionHeaderCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		96CC1BED184AFC8D00506C40 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +146,7 @@
 				96CC1C0B184AFC8D00506C40 /* Main_iPhone.storyboard */,
 				96CC1C0E184AFC8D00506C40 /* Main_iPad.storyboard */,
 				96D778B4184B3B64006E8951 /* View Controllers */,
-				96D778AF184B341C006E8951 /* CSSectionHeaderCell.xib */,
+				960E1D68184C9E8700F297E9 /* Cell */,
 				96CC1C14184AFC8D00506C40 /* Images.xcassets */,
 				96CC1C00184AFC8D00506C40 /* Supporting Files */,
 			);
@@ -320,6 +333,7 @@
 				96CC1C13184AFC8D00506C40 /* ViewController.m in Sources */,
 				96CC1C0A184AFC8D00506C40 /* AppDelegate.m in Sources */,
 				96CC1C06184AFC8D00506C40 /* main.m in Sources */,
+				960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */,
 				96D778B3184B3B54006E8951 /* CSComponentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

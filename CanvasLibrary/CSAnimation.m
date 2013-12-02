@@ -143,3 +143,82 @@ static NSMutableDictionary *_animationClasses;
 
 @end
 
+
+@interface CSFlash : CSAnimation
+
+@end
+
+@implementation CSFlash
+
++ (void)load {
+    [self registerClass:self forAnimationType:CSAnimationTypeFlash];
+}
+
++ (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
+    // Start
+    view.alpha = 0;
+    [UIView animateKeyframesWithDuration:duration/3 delay:delay options:0 animations:^{
+        // End
+        view.alpha = 1;
+    } completion:^(BOOL finished) {
+        [UIView animateKeyframesWithDuration:duration/3 delay:0 options:0 animations:^{
+            // End
+            view.alpha = 0;
+        } completion:^(BOOL finished) {
+            [UIView animateKeyframesWithDuration:duration/3 delay:0 options:0 animations:^{
+                // End
+                view.alpha = 1;
+            } completion:^(BOOL finished) {
+                
+            }];
+        }];
+    }];
+}
+
+@end
+
+
+@interface CSSlideLeft : CSAnimation
+
+@end
+
+@implementation CSSlideLeft
+
++ (void)load {
+    [self registerClass:self forAnimationType:CSAnimationTypeSlideLeft];
+}
+
++ (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
+    // Start
+    view.transform = CGAffineTransformMakeTranslation(300, 0);
+    [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
+        // End
+        view.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) { }];
+}
+
+@end
+
+
+@interface CSFadeInLeft : CSAnimation
+
+@end
+
+@implementation CSFadeInLeft
+
++ (void)load {
+    [self registerClass:self forAnimationType:CSAnimationTypeFadeInLeft];
+}
+
++ (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
+    // Start
+    view.alpha = 0;
+    view.transform = CGAffineTransformMakeTranslation(300, 0);
+    [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
+        // End
+        view.alpha = 1;
+        view.transform = CGAffineTransformMakeTranslation(0, 0);
+    } completion:^(BOOL finished) { }];
+}
+
+@end

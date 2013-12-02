@@ -6,23 +6,37 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="zfk-dM-YA1" style="IBUITableViewCellStyleDefault" id="Ofx-z5-H8p">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ofx-z5-H8p" customClass="CSSectionHeaderCell">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ofx-z5-H8p" id="T0i-yq-tig">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zfk-dM-YA1">
-                        <rect key="frame" x="15" y="0.0" width="290" height="43"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="line-black-1px" translatesAutoresizingMaskIntoConstraints="NO" id="hyT-RC-Cej">
+                        <rect key="frame" x="20" y="42" width="300" height="1"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bj-Bn-E5p">
+                        <rect key="frame" x="20" y="11" width="42" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.25490197539999998" green="0.69411766529999996" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hyT-RC-Cej" secondAttribute="bottom" id="bxq-Pn-IwA"/>
+                    <constraint firstAttribute="centerY" secondItem="4Bj-Bn-E5p" secondAttribute="centerY" id="cls-PJ-2p0"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="textLabel" destination="4Bj-Bn-E5p" id="iQZ-8T-ORB"/>
+            </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="line-black-1px" width="2" height="1"/>
+    </resources>
 </document>
