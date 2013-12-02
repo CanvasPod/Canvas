@@ -613,7 +613,7 @@ That's it!</string>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.25490197539999998" green="0.69411766529999996" blue="0.81176477670000002" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Animations" image="icon-animations" id="VRc-DH-PXv"/>
                 </viewController>
