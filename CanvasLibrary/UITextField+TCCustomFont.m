@@ -1,10 +1,10 @@
-//
-//  UITextField+TCCustomFont.m
-//  Heyzap
-//
-//  Created by Maximilian Tagher on 4/25/13.
-//
-//
+/*
+ * This file is part of the Canvas package.
+ * (c) Canvas <usecanvas@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 #import "UITextField+TCCustomFont.h"
 

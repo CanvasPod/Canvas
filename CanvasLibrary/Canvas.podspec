@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = "http://EXAMPLE/Canvas"
   # s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license      = 'MIT (example)'
-  # s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   # s.author       = { "shadownessguy@gmail.com" => "shadownessguy@gmail.com" }
   # s.authors      = { "shadownessguy@gmail.com" => "shadownessguy@gmail.com", "other author" => "email@address.com" }
   # s.author       = 'shadownessguy@gmail.com', 'other author'
