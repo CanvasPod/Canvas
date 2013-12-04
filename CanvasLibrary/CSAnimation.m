@@ -491,8 +491,8 @@ static NSMutableDictionary *_animationClasses;
         view.transform = CGAffineTransformMakeScale(2, 2);
         view.alpha = 0;
     } completion:^(BOOL finished) {
-        view.transform = CGAffineTransformMakeScale(1, 1);
-        view.alpha = 1;
+//        view.transform = CGAffineTransformMakeScale(1, 1);
+//        view.alpha = 1;
     }];
 }
 @end
