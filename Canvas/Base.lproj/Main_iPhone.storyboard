@@ -447,10 +447,10 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="1051" y="231"/>
         </scene>
-        <!--Components View Controller - Components-->
+        <!--View Controller - Components-->
         <scene sceneID="FVA-6W-drT">
             <objects>
-                <viewController id="XhU-jP-5vl" customClass="CSComponentsViewController" sceneMemberID="viewController">
+                <viewController id="XhU-jP-5vl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VSf-MM-qXX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -577,16 +577,26 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="1116" y="827"/>
         </scene>
-        <!--View Controller - CSNavigationController-->
+        <!--View Controller - Dynamic Bar Tint-->
         <scene sceneID="Apq-nv-u5g">
             <objects>
                 <viewController id="WGg-yx-jqo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wdK-Gi-9BG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation-controller-class" id="JRd-J3-JOv">
+                                <rect key="frame" x="31" y="89" width="259" height="179"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bartint-runtime" id="3nI-lh-cxU">
+                                <rect key="frame" x="31" y="320" width="259" height="167"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.30196079611778259" green="0.7450980544090271" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CSNavigationController" id="91e-Qa-dqf"/>
+                    <navigationItem key="navigationItem" title="Dynamic Bar Tint" id="91e-Qa-dqf"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="CSBarTintColor">
                             <color key="value" red="0.16862745583057404" green="0.29803922772407532" blue="0.4117647111415863" alpha="0.5" colorSpace="calibratedRGB"/>
@@ -677,6 +687,7 @@ That's it!</string>
         </scene>
     </scenes>
     <resources>
+        <image name="bartint-runtime" width="258" height="165"/>
         <image name="button-line-blue" width="30" height="30"/>
         <image name="button-line-white" width="30" height="30"/>
         <image name="icon-animations" width="32" height="32"/>
@@ -689,6 +700,7 @@ That's it!</string>
         <image name="img-fontname" width="130" height="120"/>
         <image name="img-postscript" width="219" height="59"/>
         <image name="line-black-1px" width="2" height="1"/>
+        <image name="navigation-controller-class" width="258" height="180"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
