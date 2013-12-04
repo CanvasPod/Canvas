@@ -22,6 +22,8 @@
     
     self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-components-active"];
     self.tabBarItem.image = [UIImage imageNamed:@"icon-components"];
+    
+    self.scrollView.contentSize = CGSizeMake(self.view.frame.size.width, 431);
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{

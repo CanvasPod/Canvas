@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AlK-fb-AVj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AlK-fb-AVj">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -13,8 +13,8 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="VAo-ts-tfI">
-                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="lIA-I9-wXf" customClass="CSAnimationView">
                                         <rect key="frame" x="22" y="10" width="277" height="143"/>
@@ -965,16 +965,16 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="1051" y="231"/>
         </scene>
-        <!--View Controller - Components-->
+        <!--Components View Controller - Components-->
         <scene sceneID="FVA-6W-drT">
             <objects>
-                <viewController id="XhU-jP-5vl" sceneMemberID="viewController">
+                <viewController id="XhU-jP-5vl" customClass="CSComponentsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VSf-MM-qXX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" id="H1b-kk-E6z">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="vas-zW-A2g" customClass="CSAnimationView">
@@ -1082,48 +1082,15 @@ That's it!</string>
                         </subviews>
                         <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Components" id="CRn-OK-hRO">
-                        <barButtonItem key="rightBarButtonItem" title="color" id="8Oo-0Q-s9X">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <connections>
-                                <segue destination="WGg-yx-jqo" kind="push" id="sZB-eH-kbn"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <tabBarItem key="tabBarItem" title="Components" image="icon-components" id="sOp-jK-5pX"/>
+                    <navigationItem key="navigationItem" title="Components" id="CRn-OK-hRO"/>
+                    <connections>
+                        <outlet property="scrollView" destination="H1b-kk-E6z" id="KcS-SX-Y84"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hL5-4a-eVj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116" y="827"/>
-        </scene>
-        <!--View Controller - Dynamic Bar Tint-->
-        <scene sceneID="Apq-nv-u5g">
-            <objects>
-                <viewController id="WGg-yx-jqo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wdK-Gi-9BG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation-controller-class" id="JRd-J3-JOv">
-                                <rect key="frame" x="31" y="89" width="259" height="179"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bartint-runtime" id="3nI-lh-cxU">
-                                <rect key="frame" x="31" y="320" width="259" height="167"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.30196079611778259" green="0.7450980544090271" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Dynamic Bar Tint" id="91e-Qa-dqf"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="color" keyPath="CSBarTintColor">
-                            <color key="value" red="0.16862745583057404" green="0.29803922772407532" blue="0.4117647111415863" alpha="0.5" colorSpace="calibratedRGB"/>
-                        </userDefinedRuntimeAttribute>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CLc-05-vTb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1531" y="827"/>
+            <point key="canvasLocation" x="701" y="847"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="Dec-5W-5Zw">
@@ -1140,7 +1107,7 @@ That's it!</string>
                         <outlet property="tapGestureRecognizer" destination="4fd-Eb-OdB" id="lU9-4b-mDe"/>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="1sn-HX-lzO"/>
                         <segue destination="A4v-1v-laK" kind="relationship" relationship="viewControllers" id="9eY-Ow-Fpt"/>
-                        <segue destination="8BX-S3-4qp" kind="relationship" relationship="viewControllers" id="ojF-yS-I0U"/>
+                        <segue destination="XhU-jP-5vl" kind="relationship" relationship="viewControllers" id="5GR-JC-IXm"/>
                     </connections>
                 </tabBarController>
                 <tapGestureRecognizer id="4fd-Eb-OdB">
@@ -1183,29 +1150,22 @@ That's it!</string>
             </objects>
             <point key="canvasLocation" x="701" y="162"/>
         </scene>
-        <!--Navigation Controller - Components-->
-        <scene sceneID="woR-wb-AZE">
+        <!--View Controller-->
+        <scene sceneID="zpN-7I-5Rt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8BX-S3-4qp" customClass="CSNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Components" image="icon-components" id="6og-VX-eci"/>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Iqc-fx-l1d" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Gco-5t-SGN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VkJ-VP-0PB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="XhU-jP-5vl" kind="relationship" relationship="rootViewController" id="eIL-5A-XXv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="asY-OK-xA6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9vU-Uk-Vd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="827"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bartint-runtime" width="258" height="165"/>
         <image name="button-line-blue" width="30" height="30"/>
         <image name="button-line-white" width="30" height="30"/>
         <image name="icon-animations" width="32" height="32"/>
@@ -1218,7 +1178,6 @@ That's it!</string>
         <image name="img-fontname" width="130" height="120"/>
         <image name="img-postscript" width="219" height="59"/>
         <image name="line-black-1px" width="2" height="1"/>
-        <image name="navigation-controller-class" width="258" height="180"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
