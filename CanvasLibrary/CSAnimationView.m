@@ -10,6 +10,8 @@
 
 @implementation CSAnimationView
 
+@synthesize delay, duration, type;
+
 - (void)awakeFromNib {
     if (self.type && self.duration && ! self.pauseAnimationOnAwake) {
         [self startCanvasAnimation];
