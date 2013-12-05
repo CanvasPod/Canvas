@@ -1,5 +1,5 @@
-Canvas
-======
+![](http://f.cl.ly/items/3435000d3G1E3t3m0J0X/canvas.png)
+
 
 Canvas is a project to simplify iOS development for both designers and developers.
 It had been difficult for designers to get hands on building the product with the lack of objective-c and Xcode experience, and a hard time for developer to use reasonable amount of time and lines of code just to achieve really simple effects.
@@ -12,7 +12,11 @@ Demo App
 
 The demo app in this project uses [CocoaPods][], please run `pod install` after you download this project, then open `Canvas.xcworkspace`. 
 
-You can see the live demo by downloading this project or previewing on our [homepage][].
+See this screencast in action:
+
+![](http://f.cl.ly/items/1s2Z3C0j0g1V2S0R0I2L/running-demo.gif)
+
+Live demo is also avaliable from our [homepage][].
 
 
 Getting Started
@@ -55,7 +59,7 @@ LICENSE
 Canvas is available under the MIT license. See the LICENSE file for more info.
 
 
-[homepage]:http://canvas.mengto.com
+[homepage]:http://canvaspod.io
 [CocoaPods]:http://cocoapods.org
 [Jamz Tang]:http://github.com/jamztang
 [Meng To]:http://mengto.com
