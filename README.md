@@ -6,11 +6,12 @@ It had been difficult for designers to get hands on building the product with th
 
 With Canvas, creating stunning animations requires zero lines of code, trendy effects like the Parallex headers, Sticky sections, Blurred Backgrounds, will be as simple as few lines of code changes.
 
-
 Demo App
 ========
 
 ![](http://f.cl.ly/items/350X372e2i1x2y2A1h0K/canvas-animation.gif)
+
+We've created a [development tutorial][tutorial] for a better explaination on what Cavnas can do.
 
 The demo app in this project uses [CocoaPods][], please run `pod install` after you download this project, then open `Canvas.xcworkspace`. 
 
@@ -67,4 +68,5 @@ Canvas is available under the MIT license. See the LICENSE file for more info.
 [Meng To]:http://mengto.com
 [@jamztang]:http://twitter.com/@jamztang
 [@mengto]:http://twitter.com/@mengto
+[tutorial]:https://medium.com/p/20c82a904164
 
