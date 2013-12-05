@@ -11,14 +11,14 @@
 @implementation CSAnimationView
 
 - (void)awakeFromNib {
-    if (self.animationType && self.duration && ! self.pauseAnimationOnAwake) {
+    if (self.type && self.duration && ! self.pauseAnimationOnAwake) {
         [self startCanvasAnimation];
     }
 }
 
 - (void)startCanvasAnimation {
     
-    Class <CSAnimation> class = [CSAnimation classForAnimationType:self.animationType];
+    Class <CSAnimation> class = [CSAnimation classForAnimationType:self.type];
     
     [class performAnimationOnView:self duration:self.duration delay:self.delay];
 

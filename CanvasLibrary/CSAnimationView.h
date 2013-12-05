@@ -13,7 +13,7 @@
 
 @property (nonatomic) NSTimeInterval delay;
 @property (nonatomic) NSTimeInterval duration;
-@property (nonatomic, copy) CSAnimationType animationType;
+@property (nonatomic, copy) CSAnimationType type;
 @property (nonatomic) BOOL pauseAnimationOnAwake;  // If set, animation wont starts on awakeFromNib
 
 @end

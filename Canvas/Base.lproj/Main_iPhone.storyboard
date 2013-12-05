@@ -36,7 +36,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounceLeft"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceLeft"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" id="QJN-ik-MjC" customClass="CSAnimationView">
@@ -59,7 +59,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounceLeft"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceLeft"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" id="VBl-Hn-Qyx" customClass="CSAnimationView">
@@ -167,7 +167,7 @@ That's it!</string>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
@@ -218,7 +218,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="25"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounceLeft"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceLeft"/>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                                             <integer key="value" value="0"/>
                                                         </userDefinedRuntimeAttribute>
@@ -254,7 +254,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounceRight"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceRight"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounce Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hkt-fj-ZcL">
@@ -291,7 +291,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounceDown"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceDown"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounce Down" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NPO-mL-JJd">
@@ -328,7 +328,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="bounceUp"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="bounceUp"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bounce Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p3t-Zm-Snf">
@@ -376,7 +376,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="slideLeft"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideLeft"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -413,7 +413,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="slideRight"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideRight"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -450,7 +450,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="slideDown"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideDown"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -487,7 +487,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="slideUp"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="slideUp"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -521,7 +521,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeIn"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zNj-02-Lkh">
@@ -558,7 +558,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeOut"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeOut"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade Out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SaM-aH-M0P">
@@ -595,7 +595,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeInLeft"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeInLeft"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade In Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s75-ab-nmR">
@@ -632,7 +632,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeInRight"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeInRight"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade In Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U7q-TU-Rgk">
@@ -669,7 +669,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeInDown"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeInDown"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade In Down" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ttF-PS-9Lf">
@@ -706,7 +706,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeInUp"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeInUp"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fade In Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jo8-zx-CCB">
@@ -747,7 +747,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="pop"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PxK-4I-aUU">
@@ -784,7 +784,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="morph"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="morph"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Morph" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G6K-oo-NCB">
@@ -821,7 +821,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="flash"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="flash"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flash" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PMq-b3-DE3">
@@ -858,7 +858,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="shake"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="shake"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zNF-ck-MAq">
@@ -895,7 +895,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="zoomIn"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomIn"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fwb-TR-QzJ">
@@ -932,7 +932,7 @@ That's it!</string>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                             <real key="value" value="0.5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="zoomOut"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="type" value="zoomOut"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom Out" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mYW-dc-UJZ">
@@ -1012,7 +1012,7 @@ That's it!</string>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" id="0jV-3r-Wif" customClass="CSAnimationView">
@@ -1043,7 +1043,7 @@ That's it!</string>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" id="rfa-Ts-Vyb" customClass="CSAnimationView">
@@ -1074,7 +1074,7 @@ That's it!</string>
                                             <userDefinedRuntimeAttribute type="number" keyPath="duration">
                                                 <real key="value" value="0.5"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="fadeIn"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="type" value="fadeIn"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
