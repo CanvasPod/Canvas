@@ -10,6 +10,8 @@ With Canvas, creating stunning animations requires zero lines of code, trendy ef
 Demo App
 ========
 
+![](http://f.cl.ly/items/350X372e2i1x2y2A1h0K/canvas-animation.gif)
+
 The demo app in this project uses [CocoaPods][], please run `pod install` after you download this project, then open `Canvas.xcworkspace`. 
 
 See this screencast in action:
