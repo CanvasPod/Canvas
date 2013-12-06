@@ -61,6 +61,30 @@
     [[UIApplication sharedApplication] openURL:self.homepageURL];
 }
 
+- (IBAction)tweetsButtonDidPress:(id)sender {
+    NSArray *items = @[self.homepageURL, @"Canvas: Animate in Xcode without code"];
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:items
+                                                                             applicationActivities:nil];
+    
+    [self presentViewController:controller
+                       animated:YES
+                     completion:^{
+                         NSLog(@"compltete");
+                     }];
+}
+
+- (IBAction)starsButtonDidPress:(id)sender {
+    NSArray *items = @[self.githubURL, @"Opensource repository for Canvas"];
+    UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:items
+                                                                             applicationActivities:nil];
+    
+    [self presentViewController:controller
+                       animated:YES
+                     completion:^{
+                         NSLog(@"compltete");
+                     }];
+}
+
 - (void)reloadUI {
 
     NSArray *fetchedObjects = [self.fetchedResultsController fetchedObjects];

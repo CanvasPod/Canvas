@@ -19,5 +19,7 @@
 
 - (IBAction)githubButtonDidPress:(id)sender;
 - (IBAction)homepageButtonDidPress:(id)sender;
+- (IBAction)tweetsButtonDidPress:(id)sender;
+- (IBAction)starsButtonDidPress:(id)sender;
 
 @end
