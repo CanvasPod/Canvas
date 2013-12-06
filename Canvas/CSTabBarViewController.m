@@ -24,6 +24,13 @@
 	// Do any additional setup after loading the view.
     
     [self.view addGestureRecognizer:self.tapGestureRecognizer];
+
+    // Configure our CoreData context
+    [self.viewControllers enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        if ([obj respondsToSelector:@selector(setManagedObjectContext:)]) {
+            [obj setManagedObjectContext:self.managedObjectContext];
+        }
+    }];
 }
 
 - (IBAction)handleTapGestureRecognizer:(UITapGestureRecognizer *)recognizer {

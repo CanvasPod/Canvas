@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A363422184B101600969751 /* CSAnimationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A363421184B101600969751 /* CSAnimationTableViewController.m */; };
+		1A40F7361851A2EA00483898 /* CanvasIncrementalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F7351851A2EA00483898 /* CanvasIncrementalStore.m */; };
+		1A40F73B1851A74D00483898 /* Canvas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F7391851A74D00483898 /* Canvas.xcdatamodeld */; };
+		1A40F73E1851A7C000483898 /* CanvasInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F73D1851A7C000483898 /* CanvasInfo.m */; };
 		1A977804184CAB4A009577DA /* CSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A977803184CAB4A009577DA /* CSTabBarViewController.m */; };
 		960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960E1D66184C9E7E00F297E9 /* CSSectionHeaderCell.m */; };
 		96CC1BFA184AFC8D00506C40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BF9184AFC8D00506C40 /* Foundation.framework */; };
@@ -43,6 +46,11 @@
 /* Begin PBXFileReference section */
 		1A363420184B101600969751 /* CSAnimationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAnimationTableViewController.h; sourceTree = "<group>"; };
 		1A363421184B101600969751 /* CSAnimationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAnimationTableViewController.m; sourceTree = "<group>"; };
+		1A40F7341851A2EA00483898 /* CanvasIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasIncrementalStore.h; sourceTree = "<group>"; };
+		1A40F7351851A2EA00483898 /* CanvasIncrementalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasIncrementalStore.m; sourceTree = "<group>"; };
+		1A40F73A1851A74D00483898 /* Canvas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Canvas.xcdatamodel; sourceTree = "<group>"; };
+		1A40F73C1851A7C000483898 /* CanvasInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasInfo.h; sourceTree = "<group>"; };
+		1A40F73D1851A7C000483898 /* CanvasInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasInfo.m; sourceTree = "<group>"; };
 		1A977802184CAB4A009577DA /* CSTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabBarViewController.h; sourceTree = "<group>"; };
 		1A977803184CAB4A009577DA /* CSTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTabBarViewController.m; sourceTree = "<group>"; };
 		22A78DC2869B4F67B79E82F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A40F7371851A2EE00483898 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				1A40F7341851A2EA00483898 /* CanvasIncrementalStore.h */,
+				1A40F7351851A2EA00483898 /* CanvasIncrementalStore.m */,
+				1A40F7391851A74D00483898 /* Canvas.xcdatamodeld */,
+				1A40F73C1851A7C000483898 /* CanvasInfo.h */,
+				1A40F73D1851A7C000483898 /* CanvasInfo.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
 		960E1D68184C9E8700F297E9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +170,7 @@
 				96CC1C0E184AFC8D00506C40 /* Main_iPad.storyboard */,
 				96D778B4184B3B64006E8951 /* View Controllers */,
 				960E1D68184C9E8700F297E9 /* Cell */,
+				1A40F7371851A2EE00483898 /* Modal */,
 				96CC1C14184AFC8D00506C40 /* Images.xcassets */,
 				96CC1C00184AFC8D00506C40 /* Supporting Files */,
 			);
@@ -335,11 +356,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A363422184B101600969751 /* CSAnimationTableViewController.m in Sources */,
+				1A40F73E1851A7C000483898 /* CanvasInfo.m in Sources */,
+				1A40F73B1851A74D00483898 /* Canvas.xcdatamodeld in Sources */,
 				96CC1C13184AFC8D00506C40 /* CSUsageViewController.m in Sources */,
 				96CC1C0A184AFC8D00506C40 /* AppDelegate.m in Sources */,
 				96CC1C06184AFC8D00506C40 /* main.m in Sources */,
 				960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */,
 				96D778B3184B3B54006E8951 /* CSComponentsViewController.m in Sources */,
+				1A40F7361851A2EA00483898 /* CanvasIncrementalStore.m in Sources */,
 				1A977804184CAB4A009577DA /* CSTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +599,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1A40F7391851A74D00483898 /* Canvas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1A40F73A1851A74D00483898 /* Canvas.xcdatamodel */,
+			);
+			currentVersion = 1A40F73A1851A74D00483898 /* Canvas.xcdatamodel */;
+			path = Canvas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 96CC1BEE184AFC8D00506C40 /* Project object */;
 }

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreData;
 
 @interface CSUsageViewController : UIViewController
 
@@ -14,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *tweetsButton;
 @property (weak, nonatomic) IBOutlet UIButton *starsButton;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)githubButtonDidPress:(id)sender;
 - (IBAction)homepageButtonDidPress:(id)sender;

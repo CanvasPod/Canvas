@@ -8,13 +8,13 @@
 
 #import "CSUsageViewController.h"
 #import "CSAnimationView.h"
+#import "CanvasInfo.h"
 
-@interface CSUsageViewController ()
+@interface CSUsageViewController () <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, strong) NSURL *githubURL;
 @property (nonatomic, strong) NSURL *homepageURL;
-@property (nonatomic, strong) NSURL *twitterInfoURL;
-@property (nonatomic, strong) NSURL *githubInfoURL;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
@@ -25,8 +25,6 @@
     if (self) {
         self.githubURL = [NSURL URLWithString:@"http://github.com/CanvasPod/Canvas"];
         self.homepageURL = [NSURL URLWithString:@"http://canvaspod.io"];
-        self.githubInfoURL = [NSURL URLWithString:@"https://api.github.com/repos/CanvasPod/Canvas"];
-        self.twitterInfoURL = [NSURL URLWithString:@"http://cdn.api.twitter.com/1/urls/count.json?callback=?&url=canvaspod.io"];
     }
     return self;
 }
@@ -40,9 +38,8 @@
     
     self.tabBarItem.selectedImage = [UIImage imageNamed:@"icon-canvas-active"];
     self.tabBarItem.image = [UIImage imageNamed:@"icon-canvas"];
-    
-    [self refreshStars];
-    [self refreshTweets];
+
+    [self reloadUI];
 }
 
 -(UIStatusBarStyle)preferredStatusBarStyle{
@@ -64,58 +61,80 @@
     [[UIApplication sharedApplication] openURL:self.homepageURL];
 }
 
-#pragma mark Helper
+- (void)reloadUI {
 
-- (void)refreshTweets {
-    NSURLRequest *request = [NSURLRequest requestWithURL:self.twitterInfoURL];
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionTask *task = [session dataTaskWithRequest:request
-                                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+    NSArray *fetchedObjects = [self.fetchedResultsController fetchedObjects];
 
-                                            if (error) {
-                                                NSLog(@"Error loading tweets info %@", self.twitterInfoURL);
-                                                return;
-                                            }
+    [fetchedObjects enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        CanvasInfo *info = obj;
 
-                                            NSError *serializeError;
-                                            id json = [NSJSONSerialization JSONObjectWithData:data
-                                                                                      options:0
-                                                                                        error:&serializeError];
+        if ([info.type isEqualToString:@"Github"]) {
+            NSString *countString = [NSString stringWithFormat:@"%@ Stars", info.value];
 
-                                            NSNumber *count = json[@"count"];
-                                            NSString *countString = [NSString stringWithFormat:@"%@ Tweets", count];
-                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                                [self.tweetsButton setTitle:countString
-                                                                   forState:UIControlStateNormal];
-                                            });
-                                        }];
-    [task resume];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.starsButton setTitle:countString
+                                  forState:UIControlStateNormal];
+            });
+
+        } else if ([info.type isEqualToString:@"Twitter"]) {
+
+            NSString *countString = [NSString stringWithFormat:@"%@ Tweets", info.value];
+
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.tweetsButton setTitle:countString
+                                   forState:UIControlStateNormal];
+            });
+        }
+    }];
+
 }
 
-- (void)refreshStars {
-    NSURLRequest *request = [NSURLRequest requestWithURL:self.githubInfoURL];
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionTask *task = [session dataTaskWithRequest:request
-                                        completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+#pragma mark - Fetched results controller
 
-                                            if (error) {
-                                                NSLog(@"Error loading github info %@", self.githubInfoURL);
-                                                return;
-                                            }
+- (NSFetchedResultsController *)fetchedResultsController
+{
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
+    }
 
-                                            NSError *serializeError;
-                                            id json = [NSJSONSerialization JSONObjectWithData:data
-                                                                                      options:0
-                                                                                        error:&serializeError];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
 
-                                            NSNumber *count = json[@"stargazers_count"];
-                                            NSString *countString = [NSString stringWithFormat:@"%@ Stars", count];
-                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                                [self.starsButton setTitle:countString
-                                                                  forState:UIControlStateNormal];
-                                            });
-                                        }];
-    [task resume];
+    NSFetchedResultsController *aFetchedResultsController;
+
+    NSEntityDescription *entity  = [NSEntityDescription entityForName:@"CanvasInfo" inManagedObjectContext:self.managedObjectContext];
+
+    [fetchRequest setEntity:entity];
+
+    // Edit the sort key as appropriate.
+    NSSortDescriptor *sortByType = [[NSSortDescriptor alloc] initWithKey:@"type" ascending:NO];
+    NSArray *sortDescriptors = @[sortByType];
+
+    [fetchRequest setSortDescriptors:sortDescriptors];
+
+    // Edit the section name key path and cache name if appropriate.
+    // nil for section name key path means "no sections".
+    aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
+                                                                    managedObjectContext:self.managedObjectContext
+                                                                      sectionNameKeyPath:nil
+                                                                               cacheName:@"Main"];
+
+    aFetchedResultsController.delegate = self;
+    self.fetchedResultsController = aFetchedResultsController;
+
+	NSError *error = nil;
+	if (![self.fetchedResultsController performFetch:&error]) {
+        // Replace this implementation with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+	    abort();
+	}
+
+    return _fetchedResultsController;
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+    [self reloadUI];
 }
 
 @end

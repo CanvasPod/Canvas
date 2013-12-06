@@ -11,6 +11,7 @@
 @interface CSTabBarViewController : UITabBarController
 
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGestureRecognizer;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)handleTapGestureRecognizer:(UITapGestureRecognizer *)recognizer;
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch;

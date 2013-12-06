@@ -7,13 +7,26 @@
 //
 
 #import "AppDelegate.h"
+#import "CanvasIncrementalStore.h"
+#import "CSTabBarViewController.h"
+
+@import CoreData;
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+
+@end
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
+
+    CSTabBarViewController *controller = (id)self.window.rootViewController;
+    controller.managedObjectContext = self.managedObjectContext;
     
     return YES;
 }
@@ -43,6 +56,34 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark CoreData
+
+- (NSManagedObjectContext *)managedObjectContext {
+
+    if (_managedObjectContext) {
+        return _managedObjectContext;
+    }
+
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Canvas" withExtension:@"momd"];
+    NSManagedObjectModel* model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+
+    [NSPersistentStoreCoordinator registerStoreClass:[CanvasIncrementalStore class] forStoreType:[CanvasIncrementalStore type]];
+
+    NSPersistentStoreCoordinator* coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:model];
+
+    NSError* err = nil;
+    [coordinator addPersistentStoreWithType:[CanvasIncrementalStore type]
+                              configuration:nil
+                                        URL:nil
+                                    options:nil
+                                      error:&err];
+
+    _managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+
+    return _managedObjectContext;
 }
 
 @end
