@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface CSUsageViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+
+@property (weak, nonatomic) IBOutlet UIButton *tweetsButton;
+@property (weak, nonatomic) IBOutlet UIButton *starsButton;
+
+- (IBAction)githubButtonDidPress:(id)sender;
+- (IBAction)homepageButtonDidPress:(id)sender;
 
 @end

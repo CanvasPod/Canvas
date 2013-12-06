@@ -11,9 +11,21 @@
 
 @interface CSUsageViewController ()
 
+@property (nonatomic, strong) NSURL *githubURL;
+@property (nonatomic, strong) NSURL *homepageURL;
+
 @end
 
 @implementation CSUsageViewController
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.githubURL = [NSURL URLWithString:@"http://github.com/CanvasPod/Canvas"];
+        self.homepageURL = [NSURL URLWithString:@"http://canvaspod.io"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -35,5 +47,12 @@
     [self.view startCanvasAnimation];
 }
 
+- (IBAction)githubButtonDidPress:(id)sender {
+    [[UIApplication sharedApplication] openURL:self.githubURL];
+}
+
+- (IBAction)homepageButtonDidPress:(id)sender {
+    [[UIApplication sharedApplication] openURL:self.homepageURL];
+}
 
 @end
