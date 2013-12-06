@@ -11,7 +11,7 @@ Demo App
 
 ![](http://f.cl.ly/items/350X372e2i1x2y2A1h0K/canvas-animation.gif)
 
-We've created a [development tutorial][tutorial] for a better explaination on what Cavnas can do.
+We've created a [development tutorial][tutorial] for a better explaination on what Canvas can do.
 
 The demo app in this project uses [CocoaPods][], please run `pod install` after you download this project, then open `Canvas.xcworkspace`. 
 
