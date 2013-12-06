@@ -163,7 +163,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-animation" id="9bC-BF-1dx">
-                                                <rect key="frame" x="162" y="229" width="148" height="121"/>
+                                                <rect key="frame" x="162" y="229" width="130" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OF3-LP-LKs">
@@ -1192,7 +1192,7 @@ That's it!</string>
         <image name="icon-components" width="32" height="32"/>
         <image name="icon-github" width="20" height="20"/>
         <image name="icon-twitter" width="20" height="20"/>
-        <image name="img-animation" width="148" height="121"/>
+        <image name="img-animation" width="130" height="110"/>
         <image name="img-font" width="208" height="54"/>
         <image name="img-fontname" width="130" height="120"/>
         <image name="img-postscript" width="219" height="59"/>
