@@ -20,7 +20,7 @@
     
     Class <CSAnimation> class = [CSAnimation classForAnimationType:self.type];
     
-    [class performAnimationOnView:self duration:self.duration delay:self.delay];
+    [class performAnimationOnView:self duration:self.duration delay:self.delay distance:self.distance damping:self.damping velocity:self.velocity];
 
     [super startCanvasAnimation];
 }
