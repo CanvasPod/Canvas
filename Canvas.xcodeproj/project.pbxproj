@@ -271,7 +271,7 @@
 				ORGANIZATIONNAME = Canvas;
 				TargetAttributes = {
 					96CC1BF5184AFC8D00506C40 = {
-						DevelopmentTeam = 77EV4DBTU9;
+						DevelopmentTeam = 68WS2M23VC;
 					};
 					96CC1C19184AFC8D00506C40 = {
 						TestTargetID = 96CC1BF5184AFC8D00506C40;

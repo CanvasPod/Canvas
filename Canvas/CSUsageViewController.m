@@ -62,7 +62,7 @@
 }
 
 - (IBAction)tweetsButtonDidPress:(id)sender {
-    NSArray *items = @[self.homepageURL, @"Canvas: Animate in Xcode without code"];
+    NSArray *items = @[self.homepageURL, @"Canvas: Animate in Xcode without code via @canvaspod"];
     UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:items
                                                                              applicationActivities:nil];
     
@@ -74,7 +74,7 @@
 }
 
 - (IBAction)starsButtonDidPress:(id)sender {
-    NSArray *items = @[self.githubURL, @"Opensource repository for Canvas"];
+    NSArray *items = @[self.githubURL, @"Canvas on GitHub: Animate in Xcode without code"];
     UIActivityViewController *controller = [[UIActivityViewController alloc] initWithActivityItems:items
                                                                              applicationActivities:nil];
     
