@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-
 typedef NSString *CSAnimationType;
 
 static CSAnimationType CSAnimationTypeBounceLeft   = @"bounceLeft";
@@ -31,6 +30,7 @@ static CSAnimationType CSAnimationTypeFlash        = @"flash";
 static CSAnimationType CSAnimationTypeShake        = @"shake";
 static CSAnimationType CSAnimationTypeZoomIn       = @"zoomIn";
 static CSAnimationType CSAnimationTypeZoomOut      = @"zoomOut";
+static CSAnimationType CSAnimationTypeDrop         = @"drop";
 
 extern NSString *const CSAnimationExceptionMethodNotImplemented;
 
@@ -41,8 +41,9 @@ extern NSString *const CSAnimationExceptionMethodNotImplemented;
 @property (nonatomic) NSTimeInterval damping;
 @property (nonatomic) NSTimeInterval velocity;
 @property (nonatomic) float distance;
+@property (nonatomic, strong) UIDynamicAnimator *animator;
 
-+ (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay distance:(float)distance damping:(float)damping velocity:(float)velocity;
++ (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay distance:(float)distance damping:(float)damping velocity:(float)velocity animator:(UIDynamicBehavior *)animator;
 
 @end
 
