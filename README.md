@@ -15,7 +15,7 @@ The demo app in this project uses [CocoaPods][], please run `pod install` after 
 
 See this screencast in action:
 
-![](http://f.cl.ly/items/1s2Z3C0j0g1V2S0R0I2L/running-demo.gif)
+![](http://f.cl.ly/items/1Q1V3s3y021m3I2L0r3i/running-demo-short.gif)
 
 Unable to build demo?
 -----
