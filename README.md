@@ -4,7 +4,7 @@
 Canvas is a project to simplify iOS development for both designers and developers.
 It had been difficult for designers to get hands on building the product with the lack of objective-c and Xcode experience, and a hard time for developer to use reasonable amount of time and lines of code just to achieve really simple effects.
 
-With Canvas, creating stunning animations requires zero lines of code, trendy effects like the Parallex headers, Sticky sections, Blurred Backgrounds, will be as simple as few lines of code changes.
+With Canvas, creating stunning animations requires zero lines of code, trendy effects like the Parallax headers, Sticky sections, Blurred Backgrounds, will be as simple as few lines of code changes.
 
 Demo App
 ========
@@ -19,7 +19,16 @@ See this screencast in action:
 
 ![](http://f.cl.ly/items/1s2Z3C0j0g1V2S0R0I2L/running-demo.gif)
 
-Live demo is also avaliable from our [homepage][].
+Unable to build demo?
+-----
+
+If you're getting some errors like **Accelerate.framework not include**, please update your CocoaPods version:
+
+    $ [sudo] gem install cocoapods
+
+
+We also have a live demo avaliable at [homepage][].
+
 
 
 Getting Started
@@ -69,4 +78,4 @@ Canvas is available under the MIT license. See the LICENSE file for more info.
 [@jamztang]:http://twitter.com/@jamztang
 [@mengto]:http://twitter.com/@mengto
 [tutorial]:https://medium.com/p/20c82a904164
-
+[#9]:https://github.com/CanvasPod/Canvas/issues/9
