@@ -11,8 +11,6 @@ Demo App
 
 ![](http://f.cl.ly/items/350X372e2i1x2y2A1h0K/canvas-animation.gif)
 
-We've created a [development tutorial][tutorial] for a better explaination on what Canvas can do.
-
 The demo app in this project uses [CocoaPods][], please run `pod install` after you download this project, then open `Canvas.xcworkspace`. 
 
 See this screencast in action:
@@ -50,6 +48,41 @@ Then you should now have the Xcode workspace (`.xcworkspace`) ready.
     
 That's it and you are good to go! See our [blog posts][homepage] for hands on tutorial.
 
+
+How to Use
+==========
+
+Using Interface Builder (no code required)
+----
+
+![](http://f.cl.ly/items/0q0H031a023Y243k3F1O/img-animation@2x.png)
+
+Specify the class `CSAnimationView`, and configurate the runtime attributes `duration`, `delay`, and `type`.
+
+Please also get started with our more [detailed explaination][tutorial] on what Canvas can do.
+
+Using Code
+----------
+
+It's very similar to using Interface Builder, instead you just setup the custom view in code.
+
+```objective-c
+CSAnimationView *animationView = [[CSAnimationView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+
+animationView.backgroundColor = [UIColor whiteColor];
+
+animationView.duration = 0.5;
+animationView.delay    = 0;
+animationView.type     = CSAnimationTypeMorph;
+
+[self.view addSubview:animationView];
+
+// Add your subviews into animationView
+// [animationView addSubview:<#(UIView *)#>]
+
+// Kick start the animation immediately
+[animationView startCanvasAnimation];
+```
 
 Requirements
 ============
