@@ -55,7 +55,7 @@
 
     } else if (request.requestType == NSSaveRequestType) {
         NSSaveChangesRequest *saveRequest = (NSSaveChangesRequest *)request;
-        NSLog(@"save %@",saveRequest);
+//        NSLog(@"save %@",saveRequest);
         return @[];
     }
 
