@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AlK-fb-AVj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="AlK-fb-AVj">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -189,7 +189,7 @@ That's it!</string>
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30196079611778259" green="0.7450980544090271" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.74509803921568629" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Usage" image="icon-canvas" id="XjT-aU-Jg1"/>
                     <connections>
@@ -209,7 +209,7 @@ That's it!</string>
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cWE-iV-4Qp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.74509803921568629" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection headerTitle="Dynamics" id="95W-ph-e01">
@@ -1282,7 +1282,7 @@ That's it!</string>
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.74509803921568629" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Components" image="icon-components" id="sOp-jK-5pX"/>
                     <navigationItem key="navigationItem" title="Components" id="CRn-OK-hRO"/>
@@ -1344,7 +1344,7 @@ That's it!</string>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.30196079609999998" green="0.74509805439999999" blue="0.84705889229999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.30196078431372547" green="0.74509803921568629" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Animations" image="icon-animations" id="VRc-DH-PXv"/>
                 </viewController>
