@@ -23,6 +23,10 @@ Pod::Spec.new do |s|
     sp.source_files = 'CanvasLibrary/CSBlurView/*'
   end
 
+  s.subspec 'CSNavigationController' do |sp|
+    sp.source_files = 'CanvasLibrary/CSNavigationController/*'
+  end
+
   s.subspec 'CSStickyHeaderFlowLayout' do |sp|
     sp.source_files = 'CanvasLibrary/CSStickyHeaderFlowLayout/*'
   end
