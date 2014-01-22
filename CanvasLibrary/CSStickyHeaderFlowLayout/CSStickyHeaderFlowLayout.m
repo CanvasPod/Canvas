@@ -55,7 +55,12 @@ NSString *const CSStickyHeaderParallexHeader = @"CSStickyHeaderParallexHeader";
             }
         }
     }];
-    
+
+    // If there're no items, we still want to see the parallex header
+    if ( ! allItems || [allItems count] == 0) {
+        visibleParallexHeader = YES;
+    }
+
     NSUInteger numberOfSections = [self.collectionView.dataSource numberOfSectionsInCollectionView:self.collectionView];
 
     // Create the attributes for the Parallex header
