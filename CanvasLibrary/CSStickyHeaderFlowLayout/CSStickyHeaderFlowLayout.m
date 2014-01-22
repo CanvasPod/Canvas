@@ -56,8 +56,9 @@ NSString *const CSStickyHeaderParallexHeader = @"CSStickyHeaderParallexHeader";
         }
     }];
 
-    // If there're no items, we still want to see the parallex header
-    if ( ! allItems || [allItems count] == 0) {
+    // when the visible rect is at top of the screen, make sure we see
+    // the parallex header
+    if (CGRectGetMinY(rect) <= 0) {
         visibleParallexHeader = YES;
     }
 
