@@ -482,17 +482,18 @@ static NSMutableDictionary *_animationClasses;
 + (void)load {
     [self registerClass:self forAnimationType:CSAnimationTypeZoomIn];
 }
+//DEL THINKS THESE 2 ANIMATIONS (ZOOM IN AND ZOOM OUT) ARE BACKWARDS!
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeScale(1, 1);
-    view.alpha = 1;
+    view.transform = CGAffineTransformMakeScale(2, 2);
+    view.alpha = 0;
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
-        view.transform = CGAffineTransformMakeScale(2, 2);
-        view.alpha = 0;
+        view.transform = CGAffineTransformMakeScale(1, 1);
+        view.alpha = 1;
     } completion:^(BOOL finished) {
-//        view.transform = CGAffineTransformMakeScale(1, 1);
-//        view.alpha = 1;
+        //        view.transform = CGAffineTransformMakeScale(1, 1);
+        //        view.alpha = 1;
     }];
 }
 @end
@@ -505,13 +506,14 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeScale(2, 2);
-    view.alpha = 0;
+    view.transform = CGAffineTransformMakeScale(1, 1);
+    view.alpha = 1;
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
-        view.transform = CGAffineTransformMakeScale(1, 1);
-        view.alpha = 1;
+        view.transform = CGAffineTransformMakeScale(2, 2);
+        view.alpha = 0;
     } completion:^(BOOL finished) {
+        view.transform = CGAffineTransformMakeScale(1, 1);
     }];
 }
 @end
