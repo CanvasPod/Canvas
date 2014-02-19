@@ -2,6 +2,9 @@ Pod::Spec.new do |s|
   s.name         = "Canvas"
   s.version      = "0.1.1"
   s.summary      = "Animate in Xcode without code"
+  s.description  = <<-DESC
+                   Simplify iOS Development with zero coding animations and Storyboard components
+                   DESC
   s.homepage     = "http://canvaspod.io"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { "Meng To" => "shadownessguy@gmail.com", "Jamz Tang" => "jamz@jamztang.com" }
