@@ -20,6 +20,4 @@ DerivedData
 *.hmap
 
 
-Pods/
-Podfile.lock
 *.xcscheme
