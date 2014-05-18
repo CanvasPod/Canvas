@@ -103,10 +103,6 @@ LICENSE
 
 Canvas is available under the MIT license. See the LICENSE file for more info.
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/CanvasPod/canvas/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
 [homepage]:http://canvaspod.io
 [CocoaPods]:http://cocoapods.org
 [Jamz Tang]:http://github.com/jamztang
