@@ -524,6 +524,8 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
+    view.transform = CGAffineTransformMakeTranslation(0, 0);
+    
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, -568);
@@ -685,7 +687,9 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
+    view.alpha = 1;
     view.transform = CGAffineTransformMakeScale(0.9, 0.9);
+    
     [UIView animateKeyframesWithDuration:duration/3 delay:delay options:0 animations:^{
         // End
         view.alpha = 0;
