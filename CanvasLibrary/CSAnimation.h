@@ -31,6 +31,15 @@ static CSAnimationType CSAnimationTypeFlash        = @"flash";
 static CSAnimationType CSAnimationTypeShake        = @"shake";
 static CSAnimationType CSAnimationTypeZoomIn       = @"zoomIn";
 static CSAnimationType CSAnimationTypeZoomOut      = @"zoomOut";
+static CSAnimationType CSAnimationTypeSlideDownReverse  = @"slideDownReverse";
+static CSAnimationType CSAnimationTypeFadeInSemi        = @"fadeInSemi";
+static CSAnimationType CSAnimationTypeFadeOutSemi       = @"fadeOutSemi";
+static CSAnimationType CSAnimationTypeFadeOutRight      = @"fadeOutRight";
+static CSAnimationType CSAnimationTypeFadeOutLeft       = @"fadeOutLeft";
+static CSAnimationType CSAnimationTypePopDown           = @"popDown";
+static CSAnimationType CSAnimationTypePopAlpha          = @"popAlpha";
+static CSAnimationType CSAnimationTypePopAlphaUp        = @"popAlphaUp";
+static CSAnimationType CSAnimationTypePopAlphaOut       = @"popAlphaOut";
 
 extern NSString *const CSAnimationExceptionMethodNotImplemented;
 
