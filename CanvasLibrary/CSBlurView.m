@@ -25,6 +25,7 @@
     toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     toolbar.barTintColor = view.backgroundColor;
     toolbar.barStyle = barStyle;
+    toolbar.clipsToBounds = YES;
     [view insertSubview:toolbar atIndex:0];
 }
 
