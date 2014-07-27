@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F226BCBD-BA2C-403E-B75D-FD1782F88615</string>
+	<string>C4080DF8-38A8-4E71-AEA9-62C3F40024BE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Canvas</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>3ECEE01E-6B90-437D-B16C-9130BB904A72</key>
-		<string>https://github.com/MengTo/Canvas.git</string>
+		<key>1C0DDB43-1D56-4CE6-9F56-77AB850CBA78</key>
+		<string>https://github.com/CanvasPod/Canvas</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Canvas.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>3ECEE01E-6B90-437D-B16C-9130BB904A72</key>
+		<key>1C0DDB43-1D56-4CE6-9F56-77AB850CBA78</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/MengTo/Canvas.git</string>
+	<string>https://github.com/CanvasPod/Canvas</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3ECEE01E-6B90-437D-B16C-9130BB904A72</string>
+	<string>1C0DDB43-1D56-4CE6-9F56-77AB850CBA78</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>3ECEE01E-6B90-437D-B16C-9130BB904A72</string>
+			<string>1C0DDB43-1D56-4CE6-9F56-77AB850CBA78</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Canvas</string>
 		</dict>

@@ -67,6 +67,10 @@ Using Code
 It's very similar to using Interface Builder, instead you just setup the custom view in code.
 
 ```objective-c
+#import "Canvas.h"
+```
+
+```objective-c
 CSAnimationView *animationView = [[CSAnimationView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
 
 animationView.backgroundColor = [UIColor whiteColor];
@@ -84,6 +88,18 @@ animationView.type     = CSAnimationTypeMorph;
 [animationView startCanvasAnimation];
 ```
 
+Updates
+=======
+
+v0.1.2 - 9 new animations, thanks for
+[Jake-Piatkowski][] adding those
+awesome effects!
+
+v0.1.1 - Minor fixes
+
+v0.1 - Initial release
+
+
 Requirements
 ============
 
@@ -93,21 +109,21 @@ iOS 7, Xcode 5
 Who's behind?
 =============
 
-- [Jamz Tang][] ([@jamztang][])
+- [James Tang][] ([@jamztang][])
 - [Meng To][] ([@mengto][])
 
 
 
 LICENSE
 =======
-
 Canvas is available under the MIT license. See the LICENSE file for more info.
 
 [homepage]:http://canvaspod.io
 [CocoaPods]:http://cocoapods.org
-[Jamz Tang]:http://github.com/jamztang
+[James Tang]:http://github.com/jamztang
 [Meng To]:http://mengto.com
 [@jamztang]:http://twitter.com/@jamztang
 [@mengto]:http://twitter.com/@mengto
 [tutorial]:https://medium.com/p/20c82a904164
 [#9]:https://github.com/CanvasPod/Canvas/issues/9
+[Jake-Piatkowski]:https://github.com/Jake-Piatkowski

@@ -7,8 +7,8 @@
 //
 
 #import "CSUsageViewController.h"
-#import "CSAnimationView.h"
 #import "CanvasInfo.h"
+#import "Canvas.h"
 
 @interface CSUsageViewController () <NSFetchedResultsControllerDelegate>
 

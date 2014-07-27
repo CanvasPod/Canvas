@@ -50,13 +50,22 @@
 @property (nonatomic, assign) BOOL shouldBlurBackground;
 @property (nonatomic, assign) BOOL parallaxEnabled;
 
-// determines whether or not view should be dismissed when the container view is tapped anywhere, including outside image bounds
+// determines whether or not view should be dismissed when the container view is tapped anywhere outside image bounds
 @property (nonatomic, assign) BOOL shouldDismissOnTap;
 
 // determines whether or not view should be dismissed when the container view is tapped within bounds of image view
 @property (nonatomic, assign) BOOL shouldDismissOnImageTap;
 
+// determines if photo action sheet should appear with a long press on the photo (default NO)
+@property (nonatomic, assign) BOOL shouldShowPhotoActions;
+
+//determines if view should rotate when the device orientation changes (default YES)
+@property (nonatomic, assign) BOOL shouldRotateToDeviceOrientation;
+
 @property (nonatomic, weak) id<URBMediaFocusViewControllerDelegate> delegate;
+
+// HTTP header values included in URL requests
+@property (nonatomic, strong) NSDictionary *requestHTTPHeaders;
 
 /**
  *  Convenience method for not using a parentViewController.
@@ -112,4 +121,9 @@
  */
 - (void)cancelURLConnectionIfAny;
 
+@end
+
+@interface UIImage (URBAnimatedGIF)
++ (UIImage *)urb_animatedImageWithAnimatedGIFData:(NSData *)data;
++ (UIImage *)urb_animatedImageWithAnimatedGIFURL:(NSURL *)url;
 @end

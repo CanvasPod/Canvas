@@ -1,5 +1,6 @@
 URBMediaFocusViewController
 ============
+[![Build Status](https://travis-ci.org/u10int/URBMediaFocusViewController.svg)](https://travis-ci.org/u10int/URBMediaFocusViewController)
 
 ## Overview
 
@@ -25,7 +26,7 @@ To use `URBMediaFocusViewController` in your own project, just import `URBMediaF
 
 The project uses ARC and targets iOS 7.0+.
 
-**NOTE:** This project has been updated to work with and tested against iOS 6. However, the UIDynamics features are only support in iOS 7+.
+**NOTE:** This project has been updated to work with and tested against iOS 6 (when compiling using Xcode 5+). However, the UIDynamics features are only support in iOS 7+.
 
 ## Usage Examples
 
@@ -50,6 +51,11 @@ The following is a basic example of showing an image that is linked into your pr
 In most cases, you would present `URBMediaFocusViewController` from your app's key window, which is the default implementation. However, in some cases you may want to present your `URBMediaFocusViewController` view from a specific view controller. You can provide a parent view controller in those cases, and the `URBMediaFocusViewController` instance will be added on top of that controller's view:
 
 	[self.mediaFocusController showImageFromURL:url fromView:self.thubmnailView inViewController:self];
+	
+The component will automatically detect if a loaded remote image is a GIF and properly animate it once it appears if so. You can also use the following built-in category methods to provide your own animated GIF image when displaying images that are local to your project:
+
+	+ (UIImage *)urb_animatedImageWithAnimatedGIFData:(NSData *)data;
+	+ (UIImage *)urb_animatedImageWithAnimatedGIFURL:(NSURL *)url;
 
 ## Customization
 
@@ -57,20 +63,27 @@ Most of the customization options included within this component are related to 
 
 By default, parallax and blur effects are enabled. To disable one or both effects, just set the following properties on your instance:
 
-	self.parallaxEnabled = NO;
-	self.shouldBlurBackground = NO;
-
-Note that currently if you disable the parallax effect, the background blur will also be disabled.
+	self.parallaxEnabled = NO;				// default YES
+	self.shouldBlurBackground = NO;			// default YES
 
 By default, tapping on the image will not dismiss the focus view (as controlled by `shouldDismissOnTap`), but tapping outside of the image bounds will. You can change this by setting `shouldDismissOnImageTap` to `YES` on your `URBMediaFocusViewController` instance, which will allow tapping directly on the image to dismiss:
 
-	self.shouldDismissOnImageTap = YES;
+	self.shouldDismissOnImageTap = YES;	// default NO
+	
+If you wish to only dismiss using UIDynamics, you can also dismiss the default tap gesture used to dismiss (not recommended for iOS 6 since UIDynamics isn't available):
+
+	self.shouldDismissOnTap = NO;			// default YES
+	
+You can also provide copy and save actions for the presented photo from an action sheet when the image receives a long press gesture. By default this feature is disabled, so just control this using the `shouldShowPhotoActions` property:
+
+	self.shouldShowPhotoActions = YES;		// default NO
 
 ## TODO
 
 - ~~Add CocoaPods spec~~ (added 11/15/2013)
 - Support for handling device orientation changes
 - ~~Support for focusing in image from a web view (issue #6)~~ (added 1/5/2014)
+- ~~Support for animated GIFs~~ (added 4/14/2014)
 - Add support for loading videos similar to the method for remote photos
 - Consider adding support for additional present/dismiss transition animations
 

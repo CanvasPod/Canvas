@@ -7,7 +7,7 @@
 //
 
 #import "CSComponentsViewController.h"
-#import "CSAnimationView.h"
+#import "Canvas.h"
 
 @interface CSComponentsViewController ()
 
