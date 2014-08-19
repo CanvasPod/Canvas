@@ -11,26 +11,30 @@
 
 @interface CSAutoLayoutViewController ()
 
-@property (weak, nonatomic) IBOutlet UIView *splashView;
+@property (strong, nonatomic) IBOutlet UIView *splashView;
 
 @end
 
 @implementation CSAutoLayoutViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.tabBarItem.title = @"AutoLayout";
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
+    self.tabBarItem.title = @"AutoLayout";
+
+    UIView *splashView = [[UIView alloc] initWithFrame:CGRectMake(10, 100, 300, 300)];
+    [self.view addSubview:splashView];
+    splashView.backgroundColor = [UIColor yellowColor];
+    self.splashView = splashView;
+
     CSAnimationView *animationView = [[CSAnimationView alloc] initWithFrame:CGRectMake(50, 50, 200, 200)];
-//    self.view.translatesAutoresizingMaskIntoConstraints = YES;
+    // animationView.view in my case goes fine
+    NSLog(@"animationView.translatesAutoresizingMaskIntoConstraints %d", animationView.translatesAutoresizingMaskIntoConstraints);
+    animationView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin| UIViewAutoresizingFlexibleBottomMargin;
+
+//    animationView.translatesAutoresizingMaskIntoConstraints = YES;
+
     animationView.duration = 0.5;
     animationView.delay = 0.2;
     animationView.type = CSAnimationTypePop;

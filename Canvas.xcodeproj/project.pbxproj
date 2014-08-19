@@ -12,7 +12,6 @@
 		1A40F73B1851A74D00483898 /* Canvas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F7391851A74D00483898 /* Canvas.xcdatamodeld */; };
 		1A40F73E1851A7C000483898 /* CanvasInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A40F73D1851A7C000483898 /* CanvasInfo.m */; };
 		1A8F711019A30DDB00A8741B /* CSAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F710E19A30DDB00A8741B /* CSAutoLayoutViewController.m */; };
-		1A8F711119A30DDB00A8741B /* CSAutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8F710F19A30DDB00A8741B /* CSAutoLayoutViewController.xib */; };
 		1A977804184CAB4A009577DA /* CSTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A977803184CAB4A009577DA /* CSTabBarViewController.m */; };
 		960E1D67184C9E7E00F297E9 /* CSSectionHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960E1D66184C9E7E00F297E9 /* CSSectionHeaderCell.m */; };
 		96CC1BFA184AFC8D00506C40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CC1BF9184AFC8D00506C40 /* Foundation.framework */; };
@@ -55,7 +54,6 @@
 		1A40F73D1851A7C000483898 /* CanvasInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasInfo.m; sourceTree = "<group>"; };
 		1A8F710D19A30DDB00A8741B /* CSAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSAutoLayoutViewController.h; sourceTree = "<group>"; };
 		1A8F710E19A30DDB00A8741B /* CSAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSAutoLayoutViewController.m; sourceTree = "<group>"; };
-		1A8F710F19A30DDB00A8741B /* CSAutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CSAutoLayoutViewController.xib; sourceTree = "<group>"; };
 		1A977802184CAB4A009577DA /* CSTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSTabBarViewController.h; sourceTree = "<group>"; };
 		1A977803184CAB4A009577DA /* CSTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSTabBarViewController.m; sourceTree = "<group>"; };
 		22A78DC2869B4F67B79E82F0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,7 +178,6 @@
 				96CC1C00184AFC8D00506C40 /* Supporting Files */,
 				1A8F710D19A30DDB00A8741B /* CSAutoLayoutViewController.h */,
 				1A8F710E19A30DDB00A8741B /* CSAutoLayoutViewController.m */,
-				1A8F710F19A30DDB00A8741B /* CSAutoLayoutViewController.xib */,
 			);
 			path = Canvas;
 			sourceTree = "<group>";
@@ -315,7 +312,6 @@
 				96CC1C0D184AFC8D00506C40 /* Main_iPhone.storyboard in Resources */,
 				96CC1C04184AFC8D00506C40 /* InfoPlist.strings in Resources */,
 				96D778B0184B341D006E8951 /* CSSectionHeaderCell.xib in Resources */,
-				1A8F711119A30DDB00A8741B /* CSAutoLayoutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

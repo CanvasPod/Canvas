@@ -30,7 +30,7 @@
     controller.managedObjectContext = self.managedObjectContext;
 
 
-    CSAutoLayoutViewController *autoLayoutViewController = [[CSAutoLayoutViewController alloc] initWithNibName:@"CSAutoLayoutViewController" bundle:nil];
+    CSAutoLayoutViewController *autoLayoutViewController = [[CSAutoLayoutViewController alloc] init];
 
     NSMutableArray *array = [controller mutableArrayValueForKeyPath:@"viewControllers"];
     [array addObject:autoLayoutViewController];
