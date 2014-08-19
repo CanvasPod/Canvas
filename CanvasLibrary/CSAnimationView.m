@@ -19,7 +19,11 @@
 - (void)startCanvasAnimation {
     
     Class <CSAnimation> class = [CSAnimation classForAnimationType:self.type];
-    
+
+    NSLog(@"translatesAutoresizingMaskIntoConstraints %d", self.translatesAutoresizingMaskIntoConstraints);
+
+//    self.translatesAutoresizingMaskIntoConstraints = YES;
+
     [class performAnimationOnView:self duration:self.duration delay:self.delay];
 
     [super startCanvasAnimation];
