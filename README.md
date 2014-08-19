@@ -88,6 +88,12 @@ animationView.type     = CSAnimationTypeMorph;
 [animationView startCanvasAnimation];
 ```
 
+Issues
+======
+
+It has been reported that current version doesn't work very well with AutoLayout. Canvas animates view frame/position but autolayout requires manipulating constraints. I am not sure if there's any quick way without changing from the ground up. Our [discussion here](https://github.com/CanvasPod/Canvas/issues/23) has some proposed solution but seems imperfect (but it works under iOS 8 tho). Please join our conversation or make pull request if you know a better solution!
+
+
 Updates
 =======
 
