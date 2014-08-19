@@ -9,9 +9,10 @@
 #import "CSTabBarViewController.h"
 #import "URBMediaFocusViewController.h"
 
-@interface CSTabBarViewController () <UIGestureRecognizerDelegate>
+@interface CSTabBarViewController () <UIGestureRecognizerDelegate, URBMediaFocusViewControllerDelegate>
 
 @property (nonatomic, weak) UIImageView *tappedImageView;
+@property (nonatomic, strong) URBMediaFocusViewController *mediaFocusViewController;
 
 @end
 
@@ -36,6 +37,8 @@
 - (IBAction)handleTapGestureRecognizer:(UITapGestureRecognizer *)recognizer {
     URBMediaFocusViewController *controller = [[URBMediaFocusViewController alloc] init];
     [controller showImage:self.tappedImageView.image fromView:self.view inViewController:self];
+    controller.delegate = self;
+    self.mediaFocusViewController = controller;
 }
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
@@ -48,6 +51,12 @@
 
 - (void)dealloc {
     [self.view removeGestureRecognizer:self.tapGestureRecognizer];
+}
+
+#pragma mark URBMediaFocusViewControllerDelegate
+
+- (void)mediaFocusViewControllerDidDisappear:(URBMediaFocusViewController *)mediaFocusViewController {
+    self.mediaFocusViewController = nil;
 }
 
 @end
