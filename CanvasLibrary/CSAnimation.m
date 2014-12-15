@@ -52,7 +52,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation([UIScreen mainScreen].bounds.size.width, 0);
+    view.transform = CGAffineTransformMakeTranslation(CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration/4 delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(-10, 0);
@@ -85,7 +85,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
+    view.transform = CGAffineTransformMakeTranslation(-CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration/4 delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(10, 0);
@@ -118,7 +118,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation(0, -[UIScreen mainScreen].bounds.size.height);
+    view.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight([UIScreen mainScreen].bounds));
     [UIView animateKeyframesWithDuration:duration/4 delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, -10);
@@ -151,7 +151,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation(0, [UIScreen mainScreen].bounds.size.height);
+    view.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight([UIScreen mainScreen].bounds));
     [UIView animateKeyframesWithDuration:duration/4 delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, 10);
@@ -186,7 +186,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation([UIScreen mainScreen].bounds.size.width, 0);
+    view.transform = CGAffineTransformMakeTranslation(CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, 0);
@@ -202,7 +202,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
+    view.transform = CGAffineTransformMakeTranslation(-CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, 0);
@@ -218,7 +218,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation(0, -[UIScreen mainScreen].bounds.size.height);
+    view.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight([UIScreen mainScreen].bounds));
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, 0);
@@ -234,7 +234,7 @@ static NSMutableDictionary *_animationClasses;
 }
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
-    view.transform = CGAffineTransformMakeTranslation(0, [UIScreen mainScreen].bounds.size.height);
+    view.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight([UIScreen mainScreen].bounds));
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.transform = CGAffineTransformMakeTranslation(0, 0);
@@ -285,7 +285,7 @@ static NSMutableDictionary *_animationClasses;
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
     view.alpha = 0;
-    view.transform = CGAffineTransformMakeTranslation([UIScreen mainScreen].bounds.size.width, 0);
+    view.transform = CGAffineTransformMakeTranslation(CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 1;
@@ -303,7 +303,7 @@ static NSMutableDictionary *_animationClasses;
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
     view.alpha = 0;
-    view.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
+    view.transform = CGAffineTransformMakeTranslation(-CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 1;
@@ -321,7 +321,7 @@ static NSMutableDictionary *_animationClasses;
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
     view.alpha = 0;
-    view.transform = CGAffineTransformMakeTranslation(0, -[UIScreen mainScreen].bounds.size.height);
+    view.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight([UIScreen mainScreen].bounds));
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 1;
@@ -339,7 +339,7 @@ static NSMutableDictionary *_animationClasses;
 + (void)performAnimationOnView:(UIView *)view duration:(NSTimeInterval)duration delay:(NSTimeInterval)delay {
     // Start
     view.alpha = 0;
-    view.transform = CGAffineTransformMakeTranslation(0, [UIScreen mainScreen].bounds.size.height);
+    view.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight([UIScreen mainScreen].bounds));
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 1;
@@ -528,7 +528,7 @@ static NSMutableDictionary *_animationClasses;
     
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
-        view.transform = CGAffineTransformMakeTranslation(0, -[UIScreen mainScreen].bounds.size.height);
+        view.transform = CGAffineTransformMakeTranslation(0, -CGRectGetHeight([UIScreen mainScreen].bounds));
     } completion:^(BOOL finished) { }];
 }
 @end
@@ -578,7 +578,7 @@ static NSMutableDictionary *_animationClasses;
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 0;
-        view.transform = CGAffineTransformMakeTranslation([UIScreen mainScreen].bounds.size.width, 0);
+        view.transform = CGAffineTransformMakeTranslation(CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     } completion:^(BOOL finished) { }];
 }
 @end
@@ -596,7 +596,7 @@ static NSMutableDictionary *_animationClasses;
     [UIView animateKeyframesWithDuration:duration delay:delay options:0 animations:^{
         // End
         view.alpha = 0;
-        view.transform = CGAffineTransformMakeTranslation(-[UIScreen mainScreen].bounds.size.width, 0);
+        view.transform = CGAffineTransformMakeTranslation(-CGRectGetWidth([UIScreen mainScreen].bounds), 0);
     } completion:^(BOOL finished) { }];
 }
 @end
