@@ -36,7 +36,7 @@ If you're already on CocoaPods, installing our library is easy:
 
     $ edit Podfile
     platform :ios, '7.0'
-    pod 'Canvas', '~> 0.1'
+    pod 'Canvas', '~> 0.1.2'
 
 Make sure you also update the dependencies by running this command afterwards:
 
