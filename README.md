@@ -25,7 +25,7 @@ If you're getting some errors like **Accelerate.framework not include**, please 
     $ [sudo] gem install cocoapods
 
 
-We also have a live demo avaliable at [homepage][].
+We also have a live demo available at [homepage][].
 
 
 
@@ -59,7 +59,7 @@ Using Interface Builder (no code required)
 
 Specify the class `CSAnimationView`, and configurate the runtime attributes `duration`, `delay`, and `type`.
 
-Please also get started with our more [detailed explaination][tutorial] on what Canvas can do.
+Please also get started with our more [detailed explanation][tutorial] on what Canvas can do.
 
 Using Code
 ----------
